@@ -1,0 +1,98 @@
+@media screen and (max-width: 601px) {
+   .live{
+      width: 91.46vw;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      row-gap: 12.8vw;
+   }
+   .live h1{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6.4vw;
+      line-height: 140%;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      position: relative;
+   }
+   .live h1::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11.2vw;
+      width: 14.93vw;
+      height: 0.53vw;
+      background: #FC3C3C;
+   }
+   .video{
+      width: 91.46vw;
+      /* height: 22.22vw; */
+      border-radius: 2.13vw;
+      outline: none;
+      border: none;
+      background-color: transparent;
+   }
+   .video img,
+   .video iframe {
+      width: 91.46vw;
+      height: 85.3vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+      cursor: pointer;
+      transition:  all .3s ease-in;
+   }
+   .video img:hover{
+      opacity: .8;
+   }
+}
+@media screen and (min-width: 602px) {
+   .live{
+      width: 90vw;
+      margin: 0 auto;
+      padding-top: 9.44vw;
+      display: grid;
+      align-items: center;
+      row-gap: 3.33vw;
+   }
+   .live h1{
+      position: relative;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.77vw;
+      line-height: 3.47vw;
+      letter-spacing: -0.025em;
+      color: #000000;
+   }
+   .live h1::after{
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 7.22vw;
+      height: 0.27vw;
+      background: #FC3C3C;
+      top: 4.58vw;
+   }
+   .video{
+      width: 100%;
+      padding-top: 1.11vw;
+   }
+   .video img{
+      width: 90vw;
+      padding: 0;
+      /* height: 100%; */
+      height: 42.361vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+      transition: all .3s ease-in-out;
+   }
+   .video img:hover{
+      opacity: .8;
+   }
+   .video iframe{
+      width: 90vw;
+      padding: 0;
+      height: 42.361vw;
+   }
+}

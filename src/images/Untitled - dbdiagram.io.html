@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://dbdiagram.io/d/629c49b254ce2635275fd3a9 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" class="wf-opensans-n4-active wf-opensans-n7-active wf-inconsolata-n4-active wf-inconsolata-n7-active wf-active" data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Untitled - dbdiagram.io_files/cb=gapi.loaded_1" async=""></script><script src="./Untitled - dbdiagram.io_files/cb=gapi(1).loaded_0" async=""></script><script async="" src="./Untitled - dbdiagram.io_files/gtm.js"></script><script type="text/javascript" src="./Untitled - dbdiagram.io_files/cookie.js"></script><script type="text/javascript" charset="utf-8">var _internal_staff = window.Cookie.get('internal_staff');</script><script async="" src="./Untitled - dbdiagram.io_files/widgets.js" charset="utf-8"></script><!-- Google Tag Manager --><script>window['_fs_namespace'] = 'FS';
+      if(!_internal_staff){
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NRXMWJH');
+      }</script><!-- End Google Tag Manager --><meta http-equiv="x-ua-compatible" content="ie=edge"><title>Untitled - dbdiagram.io</title><meta name="description" content="Quick and simple free tool to help you draw your database relationship diagrams and flow quickly using simple DSL language."><meta name="keywords" content="database diagram, database design, data analysts, develoepers, free tools, database schema design"><meta property="og:image:url" content="https://dbdiagram.io/static/dbdiagram.png"><meta property="og:image:secure_url" content="https://dbdiagram.io/static/dbdiagram.png"><!-- begin twitter metadata --><meta name="twitter:title" content="A Free Database Designer for Developers and Analysts"><meta name="twitter:description" content="Quick and simple free tool to help you draw your database relationship diagrams and flow quickly using just keyboard"><meta name="twitter:creator" content="@dbdiagram"><meta name="twitter:site" content="@dbdiagram"><meta name="twitter:image" content="https://cdn.holistics.io/images/dbdiagram-twitter.png"><meta name="twitter:card" content="summary_large_image"><!-- end twitter metadata --><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="icon" href="https://cdn.holistics.io/logo-dbdiagram-notext.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="./Untitled - dbdiagram.io_files/api.js" gapi_processed="true"></script><script src="./Untitled - dbdiagram.io_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="./Untitled - dbdiagram.io_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="./Untitled - dbdiagram.io_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="./Untitled - dbdiagram.io_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="./Untitled - dbdiagram.io_files/css" rel="stylesheet"><link href="./Untitled - dbdiagram.io_files/css(1)" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="./Untitled - dbdiagram.io_files/css(2)"><script async="" src="./Untitled - dbdiagram.io_files/widgets.js" charset="utf-8"></script><script src="./Untitled - dbdiagram.io_files/chargebee.js"></script><script charset="utf-8" src="./Untitled - dbdiagram.io_files/92-8a7969758e39ef1fbe36.js"></script><link href="./Untitled - dbdiagram.io_files/app.4735ed83d34871ca2791a8988150694e.css" rel="stylesheet"><style type="text/css">.vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{background:#fff}.vue-notification,.vue-notification-template{display:block;box-sizing:border-box;text-align:left}.vue-notification{font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44a4fc;border-left:5px solid #187fe7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#e54d42;border-left-color:#b82e24}.vue-notification.success{background:#68cd86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter,.vn-fade-leave-to{opacity:0}</style><style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">.vue-js-switch[data-v-25adc6c0]{display:inline-block;position:relative;vertical-align:middle;user-select:none;font-size:10px;cursor:pointer}.vue-js-switch .v-switch-input[data-v-25adc6c0]{opacity:0;position:absolute;width:1px;height:1px}.vue-js-switch .v-switch-label[data-v-25adc6c0]{position:absolute;top:0;font-weight:600;color:#fff;z-index:1}.vue-js-switch .v-switch-label.v-left[data-v-25adc6c0]{left:10px}.vue-js-switch .v-switch-label.v-right[data-v-25adc6c0]{right:10px}.vue-js-switch .v-switch-core[data-v-25adc6c0]{display:block;position:relative;box-sizing:border-box;outline:0;margin:0;transition:border-color .3s,background-color .3s;user-select:none}.vue-js-switch .v-switch-core .v-switch-button[data-v-25adc6c0]{display:block;position:absolute;overflow:hidden;top:0;left:0;border-radius:100%;background-color:#fff;z-index:2}.vue-js-switch.disabled[data-v-25adc6c0]{pointer-events:none;opacity:.6}</style><style type="text/css">.vue-slider-dot{position:absolute;-webkit-transition:all 0s;transition:all 0s;z-index:5}.vue-slider-dot:focus{outline:none}.vue-slider-dot-tooltip{position:absolute;visibility:hidden}.vue-slider-dot-hover:hover .vue-slider-dot-tooltip,.vue-slider-dot-tooltip-show{visibility:visible}.vue-slider-dot-tooltip-top{top:-10px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-dot-tooltip-bottom{bottom:-10px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-dot-tooltip-left{left:-10px;top:50%;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-dot-tooltip-right{right:-10px;top:50%;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}</style><style type="text/css">.vue-slider-marks{position:relative;width:100%;height:100%}.vue-slider-mark{position:absolute;z-index:1}.vue-slider-ltr .vue-slider-mark,.vue-slider-rtl .vue-slider-mark{width:0;height:100%;top:50%}.vue-slider-ltr .vue-slider-mark-step,.vue-slider-rtl .vue-slider-mark-step{top:0}.vue-slider-ltr .vue-slider-mark-label,.vue-slider-rtl .vue-slider-mark-label{top:100%;margin-top:10px}.vue-slider-ltr .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ltr .vue-slider-mark-step{left:0}.vue-slider-ltr .vue-slider-mark-label{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.vue-slider-rtl .vue-slider-mark{-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%)}.vue-slider-rtl .vue-slider-mark-step{right:0}.vue-slider-rtl .vue-slider-mark-label{right:50%;-webkit-transform:translateX(50%);transform:translateX(50%)}.vue-slider-btt .vue-slider-mark,.vue-slider-ttb .vue-slider-mark{width:100%;height:0;left:50%}.vue-slider-btt .vue-slider-mark-step,.vue-slider-ttb .vue-slider-mark-step{left:0}.vue-slider-btt .vue-slider-mark-label,.vue-slider-ttb .vue-slider-mark-label{left:100%;margin-left:10px}.vue-slider-btt .vue-slider-mark{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.vue-slider-btt .vue-slider-mark-step{top:0}.vue-slider-btt .vue-slider-mark-label{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-ttb .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ttb .vue-slider-mark-step{bottom:0}.vue-slider-ttb .vue-slider-mark-label{bottom:50%;-webkit-transform:translateY(50%);transform:translateY(50%)}.vue-slider-mark-label,.vue-slider-mark-step{position:absolute}</style><style type="text/css">.vue-slider{position:relative;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;-webkit-tap-highlight-color:rgba(0,0,0,0)}.vue-slider-rail{position:relative;width:100%;height:100%;-webkit-transition-property:width,height,left,right,top,bottom;transition-property:width,height,left,right,top,bottom}.vue-slider-process{position:absolute;z-index:1}</style><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style><style id="ace_searchbox">.ace_search {background-color: #ddd;color: #666;border: 1px solid #cbcbcb;border-top: 0 none;overflow: hidden;margin: 0;padding: 4px 6px 0 4px;position: absolute;top: 0;z-index: 99;white-space: normal;}.ace_search.left {border-left: 0 none;border-radius: 0px 0px 5px 0px;left: 0;}.ace_search.right {border-radius: 0px 0px 0px 5px;border-right: 0 none;right: 0;}.ace_search_form, .ace_replace_form {margin: 0 20px 4px 0;overflow: hidden;line-height: 1.9;}.ace_replace_form {margin-right: 0;}.ace_search_form.ace_nomatch {outline: 1px solid red;}.ace_search_field {border-radius: 3px 0 0 3px;background-color: white;color: black;border: 1px solid #cbcbcb;border-right: 0 none;box-sizing: border-box!important;outline: 0;padding: 0;font-size: inherit;margin: 0;line-height: inherit;padding: 0 6px;min-width: 17em;vertical-align: top;}.ace_searchbtn {border: 1px solid #cbcbcb;line-height: inherit;display: inline-block;padding: 0 6px;background: #fff;border-right: 0 none;border-left: 1px solid #dcdcdc;cursor: pointer;margin: 0;position: relative;box-sizing: content-box!important;color: #666;}.ace_searchbtn:last-child {border-radius: 0 3px 3px 0;border-right: 1px solid #cbcbcb;}.ace_searchbtn:disabled {background: none;cursor: default;}.ace_searchbtn:hover {background-color: #eef1f6;}.ace_searchbtn.prev, .ace_searchbtn.next {padding: 0px 0.7em}.ace_searchbtn.prev:after, .ace_searchbtn.next:after {content: "";border: solid 2px #888;width: 0.5em;height: 0.5em;border-width:  2px 0 0 2px;display:inline-block;transform: rotate(-45deg);}.ace_searchbtn.next:after {border-width: 0 2px 2px 0 ;}.ace_searchbtn_close {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAZ0lEQVR42u2SUQrAMAhDvazn8OjZBilCkYVVxiis8H4CT0VrAJb4WHT3C5xU2a2IQZXJjiQIRMdkEoJ5Q2yMqpfDIo+XY4k6h+YXOyKqTIj5REaxloNAd0xiKmAtsTHqW8sR2W5f7gCu5nWFUpVjZwAAAABJRU5ErkJggg==) no-repeat 50% 0;border-radius: 50%;border: 0 none;color: #656565;cursor: pointer;font: 16px/16px Arial;padding: 0;height: 14px;width: 14px;top: 9px;right: 7px;position: absolute;}.ace_searchbtn_close:hover {background-color: #656565;background-position: 50% 100%;color: white;}.ace_button {margin-left: 2px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;-ms-user-select: none;user-select: none;overflow: hidden;opacity: 0.7;border: 1px solid rgba(100,100,100,0.23);padding: 1px;box-sizing:    border-box!important;color: black;}.ace_button:hover {background-color: #eee;opacity:1;}.ace_button:active {background-color: #ddd;}.ace_button.checked {border-color: #3399ff;opacity:1;}.ace_search_options{margin-bottom: 3px;text-align: right;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;-ms-user-select: none;user-select: none;clear: both;}.ace_search_counter {float: left;font-family: arial;padding: 0 8px;}
+/*# sourceURL=ace/css/ace_searchbox */</style><script charset="utf-8" src="./Untitled - dbdiagram.io_files/tweet.45758a9d6fd14fe4ebd62b2170932592.js"></script><link rel="stylesheet" href="./Untitled - dbdiagram.io_files/css(3)" media="all"><style id="ace-holistics">.ace-holistics .ace_gutter {background: #333333;color: #DEDEDE}.ace-holistics .ace_print-margin {width: 1px;background: #1a1a1a}.ace-holistics {background: #282828;color: #dcdcdc}.ace-holistics .ace_cursor {color: #9F9F9F}.ace-holistics .ace_marker-layer .ace_selection {background: #424242}.ace-holistics.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #000000;}.ace-holistics .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-holistics .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #888888}.ace-holistics .ace_marker-layer .ace_highlight {border: 1px solid rgb(110, 119, 0);border-bottom: 0;box-shadow: inset 0 -1px rgb(110, 119, 0);margin: -1px 0 0 -1px;background: rgba(255, 235, 0, 0.1)}.ace-holistics .ace_marker-layer .ace_active-line {background: #2A2A2A;border-top: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);}.ace-holistics .ace_gutter-active-line {background-color: #2A2A2A}.ace-holistics .ace_stack {background-color: rgb(66, 90, 44)}.ace-holistics .ace_marker-layer .ace_selected-word {background: #613214;}.ace-holistics .ace_invisible {color: #343434}.ace-holistics .ace_keyword,.ace-holistics .ace_meta,.ace-holistics .ace_storage,.ace-holistics .ace_storage.ace_type,.ace-holistics .ace_support.ace_type {color: #64acdd}.ace-holistics .ace_keyword.ace_operator {color: #70C0B1}.ace-holistics .ace_constant.ace_character,.ace-holistics .ace_constant.ace_language,.ace-holistics .ace_constant.ace_numeric,.ace-holistics .ace_keyword.ace_other.ace_unit,.ace-holistics .ace_support.ace_constant,.ace-holistics .ace_variable.ace_parameter {color: #E78C45}.ace-holistics .ace_constant.ace_other {color: #EEEEEE}.ace-holistics .ace_invalid {color: #CED2CF;background-color: #DF5F5F}.ace-holistics .ace_invalid.ace_deprecated {color: #CED2CF;background-color: #B798BF}.ace-holistics .ace_fold {background-color: #7AA6DA;border-color: #DEDEDE}.ace-holistics .ace_entity.ace_name.ace_function,.ace-holistics .ace_support.ace_function,.ace-holistics .ace_variable {color: #daa48c}.ace-holistics .ace_support.ace_class,.ace-holistics .ace_support.ace_type {color: #E7C547}.ace-holistics .ace_heading,.ace-holistics .ace_markup.ace_heading,.ace-holistics .ace_string {color: #B9CA4A}.ace-holistics .ace_entity.ace_name.ace_tag,.ace-holistics .ace_entity.ace_other.ace_attribute-name,.ace-holistics .ace_meta.ace_tag,.ace-holistics .ace_string.ace_regexp,.ace-holistics .ace_variable {color: #D54E53}.ace-holistics .ace_comment {color: #969896}.ace-holistics .ace_c9searchresults.ace_keyword {color: #C2C280}.ace-holistics .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGBgYFBXV/8PAAJoAXX4kT2EAAAAAElFTkSuQmCC) right repeat-y}
+/*# sourceURL=ace/css/ace-holistics */</style></head><body><div class="v-box w-full"><header data-v-00172550="" class="flex-align-center space-content"><div data-v-00172550="" class="desktop-view h-box  flex-align-center space-content"><div data-v-00172550="" class="left-menu"><a data-v-00172550="" href="https://dbdiagram.io/home"><img data-v-00172550="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNTUgMTU1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0xMjUuNDIgNi43Njc2NmUtMDZINzQuNzhWNzYuMzRIMTU1VjI5LjU1QzE1NC45OTkgMjUuNjY3MyAxNTQuMjMyIDIxLjgyMjkgMTUyLjc0NSAxOC4yMzYzQzE1MS4yNTggMTQuNjQ5OCAxNDkuMDc4IDExLjM5MTQgMTQ2LjMzMSA4LjY0NzMyQzE0My41ODUgNS45MDMyMiAxNDAuMzI0IDMuNzI3MTYgMTM2LjczNiAyLjI0MzQzQzEzMy4xNDggMC43NTk3MDEgMTI5LjMwMyAtMC4wMDI2MjA0NiAxMjUuNDIgNi43Njc2NmUtMDZaIiBmaWxsPSIjMjg3RUZGIi8+CjxwYXRoIGQ9Ik0xNTUgNzYuMzRINzQuNzhWMTU1SDEyNS40MkMxMzMuMjQ4IDE1NC45ODkgMTQwLjc1NCAxNTEuODgxIDE0Ni4yOTYgMTQ2LjM1M0MxNTEuODM5IDE0MC44MjUgMTU0Ljk2OCAxMzMuMzI4IDE1NSAxMjUuNVY3Ni4zNFoiIGZpbGw9IiMwMjU4RUQiLz4KPHBhdGggZD0iTTc0Ljc4IDBIMjkuNThDMjEuNzQzMyAwLjAxMDU2MTEgMTQuMjMwMiAzLjEyNjI5IDguNjg2MDQgOC42NjQ4NUMzLjE0MTg3IDE0LjIwMzQgMC4wMTg1MTMgMjEuNzEzMyAwIDI5LjU1VjEyNS41QzAuMDMxNzA2OCAxMzMuMzI4IDMuMTYwODggMTQwLjgyNSA4LjcwMzYzIDE0Ni4zNTNDMTQuMjQ2NCAxNTEuODgxIDIxLjc1MiAxNTQuOTg5IDI5LjU4IDE1NUg3NC43OFYwWiIgZmlsbD0iIzAyNDZDQyIvPgo8cmVjdCBvcGFjaXR5PSIwLjIiIHg9IjE4Ljc5IiB5PSIxOC40MzAxIiB3aWR0aD0iMTE2LjIzIiBoZWlnaHQ9IjEyMi4xNCIgZmlsbD0idXJsKCNwYXR0ZXJuMCkiLz4KPHBhdGggZD0iTTUxLjcgOTMuMjlIMzAuMzZDMjkuNTgxNiA5My4yOTY3IDI4LjgwOTYgOTMuMTQ4NCAyOC4wODkgOTIuODUzOUMyNy4zNjg0IDkyLjU1OTMgMjYuNzEzNiA5Mi4xMjQ0IDI2LjE2MjcgOTEuNTc0NEMyNS42MTE3IDkxLjAyNDUgMjUuMTc1NyA5MC4zNzA0IDI0Ljg4IDg5LjY1MDNDMjQuNTg0MiA4OC45MzAyIDI0LjQzNDcgODguMTU4NCAyNC40NCA4Ny4zOFY2Ni4wN0MyNC40MzYgNjUuMjkxOSAyNC41ODY1IDY0LjUyMDggMjQuODgyNyA2My44MDEzQzI1LjE3ODkgNjMuMDgxOCAyNS42MTUgNjIuNDI4MyAyNi4xNjU3IDYxLjg3ODZDMjYuNzE2MyA2MS4zMjg4IDI3LjM3MDYgNjAuODkzOSAyOC4wOTA2IDYwLjU5ODlDMjguODEwNiA2MC4zMDM5IDI5LjU4MTkgNjAuMTU0NyAzMC4zNiA2MC4xNkg1MS43QzUyLjQ3ODQgNjAuMTUzNCA1My4yNTA0IDYwLjMwMTYgNTMuOTcxIDYwLjU5NjFDNTQuNjkxNiA2MC44OTA3IDU1LjM0NjQgNjEuMzI1NiA1NS44OTczIDYxLjg3NTZDNTYuNDQ4MyA2Mi40MjU2IDU2Ljg4NDMgNjMuMDc5NiA1Ny4xOCA2My43OTk3QzU3LjQ3NTggNjQuNTE5OCA1Ny42MjUzIDY1LjI5MTYgNTcuNjIgNjYuMDdWODcuMzhDNTcuNjEyMSA4OC45NDY3IDU2Ljk4NTUgOTAuNDQ2OSA1NS44NzY3IDkxLjU1MzhDNTQuNzY3OSA5Mi42NjA3IDUzLjI2NjcgOTMuMjg0NyA1MS43IDkzLjI5WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTk5LjMyIDIzLjI1SDEyMC42NkMxMjEuNDM4IDIzLjI0NDcgMTIyLjIwOSAyMy4zOTM5IDEyMi45MjkgMjMuNjg4OUMxMjMuNjQ5IDIzLjk4MzkgMTI0LjMwNCAyNC40MTg5IDEyNC44NTQgMjQuOTY4NkMxMjUuNDA1IDI1LjUxODMgMTI1Ljg0MSAyNi4xNzE4IDEyNi4xMzcgMjYuODkxM0MxMjYuNDM0IDI3LjYxMDggMTI2LjU4NCAyOC4zODE5IDEyNi41OCAyOS4xNlY1MC41QzEyNi41ODUgNTEuMjc4NSAxMjYuNDM2IDUyLjA1MDIgMTI2LjE0IDUyLjc3MDNDMTI1Ljg0NCA1My40OTA0IDEyNS40MDggNTQuMTQ0NSAxMjQuODU3IDU0LjY5NDVDMTI0LjMwNiA1NS4yNDQ0IDEyMy42NTIgNTUuNjc5NCAxMjIuOTMxIDU1Ljk3MzlDMTIyLjIxIDU2LjI2ODQgMTIxLjQzOCA1Ni40MTY3IDEyMC42NiA1Ni40MUg5OS4zMkM5OC41NDI0IDU2LjQxNTMgOTcuNzcxNSA1Ni4yNjYxIDk3LjA1MjEgNTUuOTcxQzk2LjMzMjYgNTUuNjc1OCA5NS42NzkgNTUuMjQwNyA5NS4xMjkxIDU0LjY5MDlDOTQuNTc5MyA1NC4xNDEgOTQuMTQ0MiA1My40ODc0IDkzLjg0OSA1Mi43Njc5QzkzLjU1MzkgNTIuMDQ4NSA5My40MDQ3IDUxLjI3NzYgOTMuNDEgNTAuNVYyOS4xNkM5My40MTUzIDI3LjU5NDIgOTQuMDM5NiAyNi4wOTQgOTUuMTQ2OCAyNC45ODY4Qzk2LjI1NCAyMy44Nzk2IDk3Ljc1NDIgMjMuMjU1MyA5OS4zMiAyMy4yNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05OS4zMiA5OS4wMUgxMjAuNjZDMTIxLjQzOCA5OS4wMDMzIDEyMi4yMSA5OS4xNTE2IDEyMi45MzEgOTkuNDQ2MUMxMjMuNjUyIDk5Ljc0MDYgMTI0LjMwNiAxMDAuMTc2IDEyNC44NTcgMTAwLjcyNkMxMjUuNDA4IDEwMS4yNzYgMTI1Ljg0NCAxMDEuOTMgMTI2LjE0IDEwMi42NUMxMjYuNDM2IDEwMy4zNyAxMjYuNTg1IDEwNC4xNDIgMTI2LjU4IDEwNC45MlYxMjYuMjNDMTI2LjU4NCAxMjcuMDA4IDEyNi40MzQgMTI3Ljc3OSAxMjYuMTM3IDEyOC40OTlDMTI1Ljg0MSAxMjkuMjE4IDEyNS40MDUgMTI5Ljg3MiAxMjQuODU0IDEzMC40MjFDMTI0LjMwNCAxMzAuOTcxIDEyMy42NDkgMTMxLjQwNiAxMjIuOTI5IDEzMS43MDFDMTIyLjIwOSAxMzEuOTk2IDEyMS40MzggMTMyLjE0NSAxMjAuNjYgMTMyLjE0SDk5LjMyQzk4LjU0MjggMTMyLjE0NCA5Ny43NzI1IDEzMS45OTQgOTcuMDUzNiAxMzEuNjk4Qzk2LjMzNDggMTMxLjQwMyA5NS42ODE3IDEzMC45NjcgOTUuMTMyMSAxMzAuNDE4Qzk0LjU4MjUgMTI5Ljg2OCA5NC4xNDc0IDEyOS4yMTUgOTMuODUxOCAxMjguNDk2QzkzLjU1NjIgMTI3Ljc3OCA5My40MDYgMTI3LjAwNyA5My40MSAxMjYuMjNWMTA0LjkyQzkzLjQxNTMgMTAzLjM1NCA5NC4wMzk2IDEwMS44NTQgOTUuMTQ2OCAxMDAuNzQ3Qzk2LjI1NCA5OS42Mzk2IDk3Ljc1NDIgOTkuMDE1MyA5OS4zMiA5OS4wMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00Mi4xNiA4MC4yM0wxMDYuMjIgMzMuOTZMMTEwLjgzIDQwLjMyTDQ2Ljc3IDg2LjU5TDQyLjE2IDgwLjIzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQxLjk2IDcyLjc1TDQ2Ljc4IDY2LjU1TDEwOC44OCAxMTQuNzhMMTA0LjA2IDEyMC45OEw0MS45NiA3Mi43NVoiIGZpbGw9IndoaXRlIi8+CjwvZz4KPGRlZnM+CjxwYXR0ZXJuIGlkPSJwYXR0ZXJuMCIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgo8dXNlIHhsaW5rOmhyZWY9IiNpbWFnZTAiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTY5NDkyIDAuMDE2MTI5KSIvPgo8L3BhdHRlcm4+CjxjbGlwUGF0aCBpZD0iY2xpcDAiPgo8cmVjdCB3aWR0aD0iMTU1IiBoZWlnaHQ9IjE1NSIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPGltYWdlIGlkPSJpbWFnZTAiIHdpZHRoPSI1OSIgaGVpZ2h0PSI2MiIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEc0FBQUErQ0FZQUFBQ1Y2R01BQUFBQUNYQklXWE1BQUFWaEFBQUZZUUVCMkgzeEFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFCblJKUkVGVWVOcnNtL3RURzFVVXgzZVREUWtoaEZlaElvS1VSNHZWcWRheFBuN3lUM2ZHR1R0YVo5UU9DRm9zeUVDbEZSRENJeVFrMmZWYzUzUGhkT1dSRFNSWkdIYm1PeHNDZS9kK3ovdWNYVnpuZWh4dXhMOFBybUtSVmhOTUFEZkNYZ1BncTNPc3lScUNLVUVXZFBCZHZXUXJnaUlvVzhKdVRJbW1CWDJDVWNHWUlDL3c2dHh2VGJBdmVDVllFV3dJU29hd0YwUFRUVUYwUnZCRThKRmdpTy9yT2FxQ2JjRzg0Q21hTlpvT3ZCaHFOWXRHRGRHdkJROEVQV2pXcVZPekJVR240Ry9CcW1ESENDR3VaTWZRcUNFNkhORm5mUVJqcktGZmtCRWtuUWpTYXBVSnUvaXI4ZEZCTk5waE54dEJZRW5NM3ROQ1NzVFFaNjNmL20remw4M1BjU1BiMUJvZ3ptU2RXN0kzaUt4TGNQR2FzYmRFakVnbVNCTjVvbkRtcXZmbnhjUzZQUExyTzRKcHdTUTVNbldUeUNiSnE3MkNkeWtpdmhCOEtCaUFySHZkeWRwOG1xWFN1VS9GWkVnK0ZJd0xjamZCakcwUXlxQk5RL0JMd1NlQzk5Rm9sci96VlQvYnlCRzBrNnp0VTAwUXVpdjRtSUwvQ2Ryc1lvTjduRHNSaWhlQmNJMHVwMHdINUo5SDlpcDhKRGpEYkR2UTNDUm0remxtT3dxcGZmclBUVFk5Uk5EcXFyTStEaUJwcmw4WGJObGVOa3pXVlpFeDBhQy8xSkJtVFJIV1p0dEhFUG9LYlQ0ZzZpYlk0S0pnUWJERzllTkU1NEU2STdPNVpwZTI3bGZXSzdDZnQ4Z21NUnV6b1c2MDRFWWtXcVJ4M3NPVW5KRFpUZ2crZyt4OThta1ZiWnJOZlM5NExuak52VWNFTDlqVFJhWWNLTEpHcTM4eXJTaHdqOEJWdnFRRHhqZ2JyRGM0bUpzYzBTei9KdmlEbXliWjZBUm0rNUR6SkFMZGhkanZnaC9CTXNKeWljaFJDZ3hyeHZ1c2Zhajg5bmhTa1dEaGV5b3k5a2NNWUdVazJhT0k1MW56VXpCQm41cUIwS3hnRHEzT016TXFLS3NvWVNsUitsa2ZLNnM1SnhQRzR3RGxjallhbUZJYTZJMTRreXErVmNRc2g1azRmTUNhOXlEdk1DWXg1dm1ONEJjMUdEdXc4eUtscWVvVkJjbGp6YVVnTjRxZjlKSHJFZzFJMUxqQVk0UTR4YzlEYUxPRXhwY3gyZS80WEhCT1JwN0JlUnUrYkZFUkxzSzcxTXduU29CS0VPRGVVK3ZkVmRvc1FNeWE3UnkrdlJQU1p0TU9MNVIya3NCMW91ZGJtMGVIQ0Q0ZWE1VXcwU1hCVDhCOGZxUDhzK2xFbTFGQjJmU1Zob1FKTGkvUjRqem5KYjR2aGZMeHRTTnJ6ZGtuL0MvaWw4K1VObmVWTmx0R3RKbTFjUVhUblNNUXpWSWhIYlphbTYyWVZQZ1EyeVVWVlhSeWIyZnpiQWZUdzFSUGt4UUd5VXV1SGFpZ1pjbVhiWjNhanNOcm9oQk5nZkVJd1hXVHkyY3g3Mks0L2JxT1pHM0ZZOHM5KzZ3bERka2NkZkNhaXNoK3E4M1k1c2NaeXJvZTlic29SQ3VxNjlqbStpNDAyNHUyYlpGUnhMUmI1c2RKcGVFZWF0a3hOaGFseFF0VXVsa2lBaS9TRUdUVmVOU1F2WU9tajZpZXlxM1NycTZXVW14b2lObzRIV0U2VUtXSU54cjlXZkF0YVdjUG9lVXg0VHhhdGhWV0lUUStDVnFoV2UzRGR1NlQ1T1kxdEZBK0E4WWMvNkh1TlFIb0tTWGhDcHFySXJndXpobUk1eURvaHFZY1lkS3VLbWZkQzNEdVdDbDVpcytWTU1jRC9HK1RCbnY5REt3eVN2bEJUUnBXdWRhdWM2UUlwSlFmZHhQRXNwQXRLYk4yMVlBdW81QStBeDJudU42cDAwVkxkQXZ6MjZEZkhMaGdTbUN2MnlIQ3ZpRXdGVlhMOXhLeW0yajdNZjN5QUtPWkFkVWRwYmp2TnRlbWNhMSsxWEs2NXhReWxzTTJnajdTRlpzWG1pR1ZNS1Y5dEphcEl5cjdhT05BWGUrSG92TVNBdm1MalZSbzZPOUF0Qk90MktjRGE2elpTOEFjSjQ2azZxamFsc0FLd3Qrek15anZET2xVdVRCUngzZzEvSUpWY0Vid0tpdVRyckNKUjBxck01ajNDR1FQRWNZWVBYTCtncm9nNEpvMU1zRnpwaURMQ0x6bW5UT2w4eVBNa1lNTGZtZm5RUVVhOWpLdXNzV2dmQnB6blNZYldPM25NT0Z1NStLWFNPeDlCcGsxNXlCLzdGYmVKWWxFcmE3Q1pyMEhhbWpXam9NR0VZNSt0OEt0dzhLc2E5cTBOZ0xwdHJ3dEV6WnIrNmpDYXQ0T3pXMk9qL0xlb3F1aXZVMXZXVDF2YnNlRExXM1dtNlF0WC9ueEZQUHJSa3JXOE5PTnR3U1ZkTnA3K0FTc2ZjeHVCei9yd0UvVERjN0RiQXA2UWVOaFBsZThHSkF0T3ljUG9MWWhuTUtjYzFlcGtEaThadUNyNUc4TGlVazFlY3pFZlN6VHFCK1hDRjdoRXZOR2tRMXJ1aWtkME8xTFg3ZGsyK1BITjVwc29LS3piVWlDcXhLWUYwT2laWEx0QmhWVnpvbjJ0b3d0U2NzcXBjV09yTjNvQVczYWduUHkrTFBUaWZacWtCSFdLK2RrUmwyTEkxbWZYTHZPeEtSYkRSSHFKVnRsSnJZQXR2a3Vsdi9YWXg5N0R0S2k5VGpSWC9xeXJ6cThwaEw3cjBDSkkxazlhRXRISktvSkg0SGpJQmYzLzhXN3pCNkRjRVQrVjRBQkFBOCtJWEhJMG9pa0FBQUFBRWxGVGtTdVFtQ0MiLz4KPC9kZWZzPgo8L3N2Zz4K" alt="dbdiagram-logo"></a> <div data-v-00172550="" class="name-info"><div data-v-00172550="" class="input-wrapper"><input data-v-00172550="" placeholder="Untitled Diagram" class="input diagram-input"> <div data-v-00172550="" class="status-text status-text-positive" data-original-title="null">
+              Synced
+              <svg data-v-00172550="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16"><path data-v-00172550="" fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class=""></path></svg> <!----></div></div> <div data-v-497e73ea="" data-v-00172550="" id="menu-dropdown" class="btn-with-icon"><div data-v-497e73ea="" class="dropdown"><svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="angle-down-icon svg-inline--fa fa-angle-down fa-w-10"><path data-v-497e73ea="" fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" class=""></path></svg> <div data-v-497e73ea="" class="dropdown-content"><div data-v-497e73ea="" class="dropdown-content-content"><div data-v-497e73ea="" data-menu-dropdown="New Diagram" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            New Diagram
+            <!----></div> <!----> <!----></div><div data-v-497e73ea="" data-menu-dropdown="My Diagrams" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            My Diagrams
+            <!----></div> <svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="absolute mr-3 right-0 angle-right-icon svg-inline--fa fa-angle-right fa-w-8"><path data-v-497e73ea="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg> <div data-v-497e73ea="" class="right-child"><div data-v-497e73ea="" class="right-child-content-wrapper"><div data-v-497e73ea="" class="right-child-content"><div data-v-497e73ea="" data-my-diagram-dropdown="Untitled" class="right-child-item title-highlighted"><a data-v-497e73ea="" href="https://dbdiagram.io/d/629c49b254ce2635275fd3a9" aria-current="page" class="flex flex-row items-center w-full h-full pl-2 hover:no-underline router-link-exact-active router-link-active"><div data-v-497e73ea="" class="mr-2"><div data-v-497e73ea=""><!----> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYgMC41QzIuNjg2MjggMC41IDAgMy4xODYyOCAwIDYuNUMwIDkuODEzNzIgMi42ODYyOCAxMi41IDYgMTIuNUM5LjMxMzcyIDEyLjUgMTIgOS44MTM3MiAxMiA2LjVDMTIgMy4xODYyOCA5LjMxMzcyIDAuNSA2IDAuNVpNMTAuMzQ3NSA0LjM3MDk3SDguMzEyMjVDOC4xMzQ4NCAzLjQ2NTk2IDcuODQ1MSAyLjYyMTIyIDcuNDU3MyAxLjg4Mzg1QzguNzQ2MDIgMi4yODkwNCA5Ljc4MTQ4IDMuMjE3NTQgMTAuMzQ3NSA0LjM3MDk3Wk0xMC43NDIzIDcuNDY3NzRIOC40NzUwN0M4LjUyODA4IDYuODQxMDEgOC41MzE2NiA2LjE5NzA3IDguNDc0NjYgNS41MzIyNkgxMC43NDIzQzEwLjg3MDggNi4xNjgzOCAxMC44NzEgNi44MzA3IDEwLjc0MjMgNy40Njc3NFpNNC42OTIgNy40Njc3NEM0LjYzMDA0IDYuODI2NjYgNC42MjkzOSA2LjE4MjAyIDQuNjkxMDEgNS41MzIyNkg3LjMwODk5QzcuMzcwNTYgNi4xODE0MiA3LjM3MDAxIDYuODI2MDEgNy4zMDggNy40Njc3NEg0LjY5MlpNNy4xMjQ1MiA4LjYyOTAzQzYuODk4MjggOS42NDY0NCA2LjUxMjQ3IDEwLjU2MjQgNiAxMS4yNzJDNS40ODc1MSAxMC41NjI0IDUuMTAxNzIgOS42NDY0NCA0Ljg3NTQ4IDguNjI5MDNINy4xMjQ1MlpNMS4yNTc2OCA1LjUzMjI2SDMuNTI1MzRDMy40NzIwOSA2LjE1MzUyIDMuNDY4MjIgNi43OTcxIDMuNTI0OTMgNy40Njc3NEgxLjI1NzY4QzEuMTI5MjMgNi44MzE2NSAxLjEyOTA0IDYuMTY5MyAxLjI1NzY4IDUuNTMyMjZaTTQuODcyNDQgNC4zNzA5N0M1LjA5NjgzIDMuMzU1NDcgNS40ODE0NCAyLjQ0MzgzIDYgMS43MjcxN0M2LjUxODU2IDIuNDQzODMgNi45MDMxOSAzLjM1NTQ5IDcuMTI3NTYgNC4zNzA5N0g0Ljg3MjQ0Wk00LjU0MjY4IDEuODgzODVDNC4xNTQ5IDIuNjIxMjIgMy44NjUxNCAzLjQ2NTk2IDMuNjg3NzUgNC4zNzA5N0gxLjY1MjQ3QzIuMjE4MDYgMy4yMTg0OCAzLjI1Mjk5IDIuMjg5MzUgNC41NDI2OCAxLjg4Mzg1Wk0xLjY1MjQ3IDguNjI5MDNIMy42ODU3N0MzLjg2MjQgOS41MzU2MSA0LjE1MTQyIDEwLjM3ODYgNC41Mzk5OSAxMS4xMTUzQzMuMjQyMTMgMTAuNzA2NCAyLjIxMzIzIDkuNzcxNjIgMS42NTI0NyA4LjYyOTAzWk03LjQ2MDAxIDExLjExNTNDNy44NDg1OCAxMC4zNzg2IDguMTM3NiA5LjUzNTYxIDguMzE0MjMgOC42MjkwM0gxMC4zNDc1QzkuNzg1ODMgOS43NzM1NiA4Ljc1NTgxIDEwLjcwNyA3LjQ2MDAxIDExLjExNTNaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="globe"></div></div> <div data-v-497e73ea="" class="title">Untitled</div></a> <div data-v-497e73ea="" class="flex w-full h-full items-center justify-center"><svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="close-icon svg-inline--fa fa-times fa-w-11"><path data-v-497e73ea="" fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg></div></div></div></div></div></div><div data-v-497e73ea="" data-menu-dropdown="Shared Diagrams" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            Shared Diagrams
+            <!----></div> <svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="absolute mr-3 right-0 angle-right-icon svg-inline--fa fa-angle-right fa-w-8"><path data-v-497e73ea="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg> <div data-v-497e73ea="" class="right-child"><div data-v-497e73ea="" class="right-child-content-wrapper"><div data-v-497e73ea="" class="right-child-content"><div data-v-497e73ea="" data-my-diagram-dropdown="(Empty)" class="right-child-item cursor-not-allowed select-none"><div data-v-497e73ea="" class="title ml-3">(Empty)</div></div></div></div></div></div><div data-v-497e73ea="" data-menu-dropdown="New Sample Diagram" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            New Sample Diagram
+            <!----></div> <!----> <!----></div></div></div></div></div></div> <!----> <!----> <div data-v-274b76f6="" data-v-00172550="" id="share-btn" class="base-menu-btn has-background"><div data-v-274b76f6=""><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="header-icon svg-inline--fa fa-lock fa-w-14"><path data-v-274b76f6="" fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" class=""></path></svg> <span data-v-274b76f6="" class="title">Share
+      <!----></span> <!----> <!----></div> <!----> <!----></div> <button data-v-6d11e610="" data-v-00172550="" class="history-btn relative flex items-center justify-between rounded px-3 mx-2"><svg data-v-6d11e610="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="history" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-history fa-w-16"><path data-v-6d11e610="" fill="currentColor" d="M504 255.531c.253 136.64-111.18 248.372-247.82 248.468-59.015.042-113.223-20.53-155.822-54.911-11.077-8.94-11.905-25.541-1.839-35.607l11.267-11.267c8.609-8.609 22.353-9.551 31.891-1.984C173.062 425.135 212.781 440 256 440c101.705 0 184-82.311 184-184 0-101.705-82.311-184-184-184-48.814 0-93.149 18.969-126.068 49.932l50.754 50.754c10.08 10.08 2.941 27.314-11.313 27.314H24c-8.837 0-16-7.163-16-16V38.627c0-14.254 17.234-21.393 27.314-11.314l49.372 49.372C129.209 34.136 189.552 8 256 8c136.81 0 247.747 110.78 248 247.531zm-180.912 78.784l9.823-12.63c8.138-10.463 6.253-25.542-4.21-33.679L288 256.349V152c0-13.255-10.745-24-24-24h-16c-13.255 0-24 10.745-24 24v135.651l65.409 50.874c10.463 8.137 25.541 6.253 33.679-4.21z" class=""></path></svg> <p data-v-6d11e610="" class="title ml-2">
+    History
+  </p> <div data-v-a64cb8cc="" data-v-6d11e610="" class="ring-container absolute new-release" style="display: none;"><div data-v-a64cb8cc="" class="circle w-5 h-5 rounded-full"></div> <div data-v-a64cb8cc="" class="ringring absolute opacity-0 w-8 h-8"></div></div></button> <!----> <!----> <div data-v-274b76f6="" data-v-00172550="" id="export-btn" class="base-menu-btn has-background"><div data-v-274b76f6="" class="dropdown"><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="header-icon svg-inline--fa fa-download fa-w-16"><path data-v-274b76f6="" fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z" class=""></path></svg> <span data-v-274b76f6="" class="title">Export
+      <!----></span> <svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="angle-down-icon svg-inline--fa fa-angle-down fa-w-10"><path data-v-274b76f6="" fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" class=""></path></svg> <div data-v-274b76f6="" class="dropdown-content-wrapper"><div data-v-274b76f6="" class="dropdown-content"><div data-v-274b76f6="" id="export-pdf-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Export to PDF
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="export-postgres-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Export to PostgreSQL
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="export-mysql-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Export to MySQL
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="export-mssql-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Export to SQL Server
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="export-png-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Export to PNG
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div></div></div></div> <!----> <!----></div> <div data-v-274b76f6="" data-v-00172550="" id="import-btn" class="base-menu-btn has-background"><div data-v-274b76f6="" class="dropdown"><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="upload" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="header-icon svg-inline--fa fa-upload fa-w-16"><path data-v-274b76f6="" fill="currentColor" d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z" class=""></path></svg> <span data-v-274b76f6="" class="title">Import
+      <!----></span> <svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="angle-down-icon svg-inline--fa fa-angle-down fa-w-10"><path data-v-274b76f6="" fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" class=""></path></svg> <div data-v-274b76f6="" class="dropdown-content-wrapper"><div data-v-274b76f6="" class="dropdown-content"><div data-v-274b76f6="" id="import-mysql-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Import from MySQL
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="import-postgres-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Import from PostgreSQL
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="import-schemarb-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Import from Rails (schema.rb)
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div><div data-v-274b76f6="" id="import-mssql-btn" class="dropdown-item"><div data-v-274b76f6="" class="title-wrapper"><div data-v-274b76f6="" class="title">
+            Import from SQL Server
+          </div> <div data-v-274b76f6="" class="subtitle">
+            
+          </div></div> <!----> <!----></div></div></div></div> <!----> <!----></div> <div data-v-274b76f6="" data-v-00172550="" id="dark-mode-btn" class="base-menu-btn has-background"><div data-v-274b76f6=""><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="header-icon svg-inline--fa fa-moon fa-w-16"><path data-v-274b76f6="" fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" class=""></path></svg> <span data-v-274b76f6="" class="title">
+      <!----></span> <!----> <!----></div> <div data-v-274b76f6="" class="slide-toggle-wrapper"><div data-v-274b76f6="" class="slider-toggle-container"><!----> <div id="toggle-container"><label class="switch"><input type="checkbox"> <span class="slider round cursor-pointer"></span></label></div></div></div> <!----></div> <div data-v-959a05de="" data-v-00172550=""><a data-v-959a05de="" href="https://dbdocs.io/?utm_source=dbdiagram&amp;utm_medium=promo_button" target="_blank"><button data-v-959a05de="" class="relative flex items-center justify-between rounded"><img data-v-959a05de="" src="./Untitled - dbdiagram.io_files/logo-dbdocs.svg"> <p data-v-959a05de="" class="ml-1 font-semibold text-center">
+        dbdocs.io
+      </p></button></a></div></div> <div data-v-00172550="" class="h-box right-menu flex-align-center"><button data-v-00172550="" class="d-btn d-btn-primary upgrade-now-btn">
+  Upgrade
+  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCA0OCAzOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ0LjAwNjUgNC42Mjg4QzQxLjc5NyA0LjYyODggNDAuMDA1OSA2LjcwMTI2IDQwLjAwNTkgOS4yNTc3QzQwLjAwNjcgOS43NDI5NyA0MC4wNzQyIDEwLjIyNSA0MC4yMDU5IDEwLjY4NTdMMzYuOTYxMyAxMy4wNzJDMzQuODI1MSAxNC42NDY4IDMyLjAwODYgMTQuMTI0OCAzMC40MDQzIDExLjg1NjlMMjcuMjIzOSA3LjM1NTM0QzI3LjczIDYuNTY2OTUgMjguMDAzNiA1LjYxMTA2IDI4LjAwNCA0LjYyODlDMjguMDA0IDIuMDcyNDcgMjYuMjEyOCAwIDI0LjAwMzQgMEMyMS43OTM5IDAgMjAuMDAyNyAyLjA3MjQ3IDIwLjAwMjcgNC42Mjg5QzIwLjAwMzEgNS42MTEwNiAyMC4yNzY3IDYuNTY2OTUgMjAuNzgyOSA3LjM1NTM0TDE3LjYwMjQgMTEuODU2OUMxNS45OTg0IDE0LjEyMzUgMTMuMTgzMiAxNC42NDU0IDExLjA0NzQgMTMuMDcyTDcuODAxMTUgMTAuNjg1N0M3LjkzMjg5IDEwLjIyNSA4LjAwMDQgOS43NDI5NyA4LjAwMTE1IDkuMjU3N0M4LjAwMTUzIDYuNzAxMjYgNi4yMTA3MyA0LjYyODQ3IDQuMDAxMTkgNC42MjgwNEMxLjc5MTgzIDQuNjI3NiAwLjAwMDM3NTEyMiA2LjY5OTc1IDYuNjU1NjFlLTA4IDkuMjU2MThDLTAuMDAwMzc0OTg5IDExLjY1NiAxLjU4NDQyIDEzLjY1ODEgMy42NTA1MSAxMy44NjgxTDYuMDE0ODYgMzAuMjc3NEM2LjA5NTAzIDMwLjgzNTMgNi41MTIwOSAzMS4yNDQ1IDcuMDAwOTcgMzEuMjQ0OEg0MS4wMDZDNDEuNDk0OSAzMS4yNDQ1IDQxLjkxMiAzMC44MzUzIDQxLjk5MjEgMzAuMjc3NEw0NC4zNTY1IDEzLjg2ODFDNDYuNTU3MSAxMy42Mzk3IDQ4LjE4MTEgMTEuMzkwNCA0Ny45ODM4IDguODQ0MTRDNDcuNzk5IDYuNDYwNzQgNDYuMDc0NiA0LjYzMzI0IDQ0LjAwNjUgNC42Mjg4WiIgZmlsbD0iI0ZGQzEwNyIvPgo8cGF0aCBkPSJNMjQuMDAzNiAzNS44NzM1QzMzLjM5MzggMzUuODczNSA0MS4wMDYxIDMzLjI4MyA0MS4wMDYxIDMwLjA4NzVDNDEuMDA2MSAyNi44OTIgMzMuMzkzOCAyNC4zMDE1IDI0LjAwMzYgMjQuMzAxNUMxNC42MTM0IDI0LjMwMTUgNy4wMDExIDI2Ljg5MiA3LjAwMTEgMzAuMDg3NUM3LjAwMTEgMzMuMjgzIDE0LjYxMzQgMzUuODczNSAyNC4wMDM2IDM1Ljg3MzVaIiBmaWxsPSIjRkZBMDAwIi8+CjxwYXRoIGQ9Ik0yNC4wMDM4IDM3LjAzMDNDMTUuMDU2NCAzNy4wMzAzIDYuMDAxMSAzNC42NDY1IDYuMDAxMSAzMC4wODdDNi4wMDExIDI1LjUyNzUgMTUuMDU2NCAyMy4xNDM3IDI0LjAwMzggMjMuMTQzN0MzMi45NTExIDIzLjE0MzcgNDIuMDA2NCAyNS41Mjc1IDQyLjAwNjQgMzAuMDg3QzQyLjAwNjQgMzQuNjQ2NSAzMi45NTExIDM3LjAzMDMgMjQuMDAzOCAzNy4wMzAzWk0yNC4wMDM4IDI1LjQ1ODFDMTMuNDk4MiAyNS40NTgxIDguMDAxMzYgMjguNDY2OCA4LjAwMTM2IDMwLjA4N0M4LjAwMTM2IDMxLjcwNzIgMTMuNDk4MiAzNC43MTU5IDI0LjAwMzggMzQuNzE1OUMzNC41MDkzIDM0LjcxNTkgNDAuMDA2MiAzMS43MDcyIDQwLjAwNjIgMzAuMDg3QzQwLjAwNjIgMjguNDY2OCAzNC41MDkzIDI1LjQ1ODEgMjQuMDAzOCAyNS40NTgxWiIgZmlsbD0iI0ZGRDU0RiIvPgo8L3N2Zz4K" class="w-5 ml-1 align-middle inline"></button> <div data-v-274b76f6="" data-v-00172550="" id="help-btn" class="base-menu-btn"><div data-v-274b76f6=""><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="header-icon svg-inline--fa fa-question fa-w-12"><path data-v-274b76f6="" fill="currentColor" d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z" class=""></path></svg> <span data-v-274b76f6="" class="title">Help
+      <!----></span> <!----> <!----></div> <!----> <!----></div> <div data-v-5a888133="" data-v-00172550="" class="text-white"><div data-v-5a888133="" class="d-dropdown inline-block p-1 cursor-pointer"><div><div data-v-5a888133="" class="flex flex-row items-center"><div data-v-5a888133="" class="relative"><!----> <img data-v-5a888133="" src="./Untitled - dbdiagram.io_files/7e370da9a3471e33596f52727992439f" alt="Avatar" class="rounded-full"></div> <svg data-v-5a888133="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="ml-1 text-sm svg-inline--fa fa-angle-down fa-w-10"><path data-v-5a888133="" fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" class=""></path></svg></div></div> <ul class="d-dropdown-menu" style="display: none; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(1889px, 48px);" data-popper-placement="bottom"><li data-v-5a888133=""><div data-v-5a888133="">
+          gift.weike@gmail.com
+        </div></li> <li data-v-5a888133="" class="seperator"></li> <!----> <li data-v-5a888133=""><div data-v-5a888133=""><svg data-v-5a888133="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="mr-2 svg-inline--fa fa-user fa-w-14 fa-fw"><path data-v-5a888133="" fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path></svg>
+          Manage Account
+        </div></li> <li data-v-5a888133=""><div data-v-5a888133="" id="signout-btn"><svg data-v-5a888133="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mr-2 svg-inline--fa fa-sign-out-alt fa-w-16 fa-fw"><path data-v-5a888133="" fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z" class=""></path></svg>
+          Sign Out
+        </div></li></ul></div></div></div></div> <div data-v-00172550="" class="mobile-view h-box"><a data-v-00172550="" href="https://dbdiagram.io/home"><img data-v-00172550="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNTUgMTU1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0xMjUuNDIgNi43Njc2NmUtMDZINzQuNzhWNzYuMzRIMTU1VjI5LjU1QzE1NC45OTkgMjUuNjY3MyAxNTQuMjMyIDIxLjgyMjkgMTUyLjc0NSAxOC4yMzYzQzE1MS4yNTggMTQuNjQ5OCAxNDkuMDc4IDExLjM5MTQgMTQ2LjMzMSA4LjY0NzMyQzE0My41ODUgNS45MDMyMiAxNDAuMzI0IDMuNzI3MTYgMTM2LjczNiAyLjI0MzQzQzEzMy4xNDggMC43NTk3MDEgMTI5LjMwMyAtMC4wMDI2MjA0NiAxMjUuNDIgNi43Njc2NmUtMDZaIiBmaWxsPSIjMjg3RUZGIi8+CjxwYXRoIGQ9Ik0xNTUgNzYuMzRINzQuNzhWMTU1SDEyNS40MkMxMzMuMjQ4IDE1NC45ODkgMTQwLjc1NCAxNTEuODgxIDE0Ni4yOTYgMTQ2LjM1M0MxNTEuODM5IDE0MC44MjUgMTU0Ljk2OCAxMzMuMzI4IDE1NSAxMjUuNVY3Ni4zNFoiIGZpbGw9IiMwMjU4RUQiLz4KPHBhdGggZD0iTTc0Ljc4IDBIMjkuNThDMjEuNzQzMyAwLjAxMDU2MTEgMTQuMjMwMiAzLjEyNjI5IDguNjg2MDQgOC42NjQ4NUMzLjE0MTg3IDE0LjIwMzQgMC4wMTg1MTMgMjEuNzEzMyAwIDI5LjU1VjEyNS41QzAuMDMxNzA2OCAxMzMuMzI4IDMuMTYwODggMTQwLjgyNSA4LjcwMzYzIDE0Ni4zNTNDMTQuMjQ2NCAxNTEuODgxIDIxLjc1MiAxNTQuOTg5IDI5LjU4IDE1NUg3NC43OFYwWiIgZmlsbD0iIzAyNDZDQyIvPgo8cmVjdCBvcGFjaXR5PSIwLjIiIHg9IjE4Ljc5IiB5PSIxOC40MzAxIiB3aWR0aD0iMTE2LjIzIiBoZWlnaHQ9IjEyMi4xNCIgZmlsbD0idXJsKCNwYXR0ZXJuMCkiLz4KPHBhdGggZD0iTTUxLjcgOTMuMjlIMzAuMzZDMjkuNTgxNiA5My4yOTY3IDI4LjgwOTYgOTMuMTQ4NCAyOC4wODkgOTIuODUzOUMyNy4zNjg0IDkyLjU1OTMgMjYuNzEzNiA5Mi4xMjQ0IDI2LjE2MjcgOTEuNTc0NEMyNS42MTE3IDkxLjAyNDUgMjUuMTc1NyA5MC4zNzA0IDI0Ljg4IDg5LjY1MDNDMjQuNTg0MiA4OC45MzAyIDI0LjQzNDcgODguMTU4NCAyNC40NCA4Ny4zOFY2Ni4wN0MyNC40MzYgNjUuMjkxOSAyNC41ODY1IDY0LjUyMDggMjQuODgyNyA2My44MDEzQzI1LjE3ODkgNjMuMDgxOCAyNS42MTUgNjIuNDI4MyAyNi4xNjU3IDYxLjg3ODZDMjYuNzE2MyA2MS4zMjg4IDI3LjM3MDYgNjAuODkzOSAyOC4wOTA2IDYwLjU5ODlDMjguODEwNiA2MC4zMDM5IDI5LjU4MTkgNjAuMTU0NyAzMC4zNiA2MC4xNkg1MS43QzUyLjQ3ODQgNjAuMTUzNCA1My4yNTA0IDYwLjMwMTYgNTMuOTcxIDYwLjU5NjFDNTQuNjkxNiA2MC44OTA3IDU1LjM0NjQgNjEuMzI1NiA1NS44OTczIDYxLjg3NTZDNTYuNDQ4MyA2Mi40MjU2IDU2Ljg4NDMgNjMuMDc5NiA1Ny4xOCA2My43OTk3QzU3LjQ3NTggNjQuNTE5OCA1Ny42MjUzIDY1LjI5MTYgNTcuNjIgNjYuMDdWODcuMzhDNTcuNjEyMSA4OC45NDY3IDU2Ljk4NTUgOTAuNDQ2OSA1NS44NzY3IDkxLjU1MzhDNTQuNzY3OSA5Mi42NjA3IDUzLjI2NjcgOTMuMjg0NyA1MS43IDkzLjI5WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTk5LjMyIDIzLjI1SDEyMC42NkMxMjEuNDM4IDIzLjI0NDcgMTIyLjIwOSAyMy4zOTM5IDEyMi45MjkgMjMuNjg4OUMxMjMuNjQ5IDIzLjk4MzkgMTI0LjMwNCAyNC40MTg5IDEyNC44NTQgMjQuOTY4NkMxMjUuNDA1IDI1LjUxODMgMTI1Ljg0MSAyNi4xNzE4IDEyNi4xMzcgMjYuODkxM0MxMjYuNDM0IDI3LjYxMDggMTI2LjU4NCAyOC4zODE5IDEyNi41OCAyOS4xNlY1MC41QzEyNi41ODUgNTEuMjc4NSAxMjYuNDM2IDUyLjA1MDIgMTI2LjE0IDUyLjc3MDNDMTI1Ljg0NCA1My40OTA0IDEyNS40MDggNTQuMTQ0NSAxMjQuODU3IDU0LjY5NDVDMTI0LjMwNiA1NS4yNDQ0IDEyMy42NTIgNTUuNjc5NCAxMjIuOTMxIDU1Ljk3MzlDMTIyLjIxIDU2LjI2ODQgMTIxLjQzOCA1Ni40MTY3IDEyMC42NiA1Ni40MUg5OS4zMkM5OC41NDI0IDU2LjQxNTMgOTcuNzcxNSA1Ni4yNjYxIDk3LjA1MjEgNTUuOTcxQzk2LjMzMjYgNTUuNjc1OCA5NS42NzkgNTUuMjQwNyA5NS4xMjkxIDU0LjY5MDlDOTQuNTc5MyA1NC4xNDEgOTQuMTQ0MiA1My40ODc0IDkzLjg0OSA1Mi43Njc5QzkzLjU1MzkgNTIuMDQ4NSA5My40MDQ3IDUxLjI3NzYgOTMuNDEgNTAuNVYyOS4xNkM5My40MTUzIDI3LjU5NDIgOTQuMDM5NiAyNi4wOTQgOTUuMTQ2OCAyNC45ODY4Qzk2LjI1NCAyMy44Nzk2IDk3Ljc1NDIgMjMuMjU1MyA5OS4zMiAyMy4yNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05OS4zMiA5OS4wMUgxMjAuNjZDMTIxLjQzOCA5OS4wMDMzIDEyMi4yMSA5OS4xNTE2IDEyMi45MzEgOTkuNDQ2MUMxMjMuNjUyIDk5Ljc0MDYgMTI0LjMwNiAxMDAuMTc2IDEyNC44NTcgMTAwLjcyNkMxMjUuNDA4IDEwMS4yNzYgMTI1Ljg0NCAxMDEuOTMgMTI2LjE0IDEwMi42NUMxMjYuNDM2IDEwMy4zNyAxMjYuNTg1IDEwNC4xNDIgMTI2LjU4IDEwNC45MlYxMjYuMjNDMTI2LjU4NCAxMjcuMDA4IDEyNi40MzQgMTI3Ljc3OSAxMjYuMTM3IDEyOC40OTlDMTI1Ljg0MSAxMjkuMjE4IDEyNS40MDUgMTI5Ljg3MiAxMjQuODU0IDEzMC40MjFDMTI0LjMwNCAxMzAuOTcxIDEyMy42NDkgMTMxLjQwNiAxMjIuOTI5IDEzMS43MDFDMTIyLjIwOSAxMzEuOTk2IDEyMS40MzggMTMyLjE0NSAxMjAuNjYgMTMyLjE0SDk5LjMyQzk4LjU0MjggMTMyLjE0NCA5Ny43NzI1IDEzMS45OTQgOTcuMDUzNiAxMzEuNjk4Qzk2LjMzNDggMTMxLjQwMyA5NS42ODE3IDEzMC45NjcgOTUuMTMyMSAxMzAuNDE4Qzk0LjU4MjUgMTI5Ljg2OCA5NC4xNDc0IDEyOS4yMTUgOTMuODUxOCAxMjguNDk2QzkzLjU1NjIgMTI3Ljc3OCA5My40MDYgMTI3LjAwNyA5My40MSAxMjYuMjNWMTA0LjkyQzkzLjQxNTMgMTAzLjM1NCA5NC4wMzk2IDEwMS44NTQgOTUuMTQ2OCAxMDAuNzQ3Qzk2LjI1NCA5OS42Mzk2IDk3Ljc1NDIgOTkuMDE1MyA5OS4zMiA5OS4wMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00Mi4xNiA4MC4yM0wxMDYuMjIgMzMuOTZMMTEwLjgzIDQwLjMyTDQ2Ljc3IDg2LjU5TDQyLjE2IDgwLjIzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQxLjk2IDcyLjc1TDQ2Ljc4IDY2LjU1TDEwOC44OCAxMTQuNzhMMTA0LjA2IDEyMC45OEw0MS45NiA3Mi43NVoiIGZpbGw9IndoaXRlIi8+CjwvZz4KPGRlZnM+CjxwYXR0ZXJuIGlkPSJwYXR0ZXJuMCIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgo8dXNlIHhsaW5rOmhyZWY9IiNpbWFnZTAiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTY5NDkyIDAuMDE2MTI5KSIvPgo8L3BhdHRlcm4+CjxjbGlwUGF0aCBpZD0iY2xpcDAiPgo8cmVjdCB3aWR0aD0iMTU1IiBoZWlnaHQ9IjE1NSIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPGltYWdlIGlkPSJpbWFnZTAiIHdpZHRoPSI1OSIgaGVpZ2h0PSI2MiIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEc0FBQUErQ0FZQUFBQ1Y2R01BQUFBQUNYQklXWE1BQUFWaEFBQUZZUUVCMkgzeEFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFCblJKUkVGVWVOcnNtL3RURzFVVXgzZVREUWtoaEZlaElvS1VSNHZWcWRheFBuN3lUM2ZHR1R0YVo5UU9DRm9zeUVDbEZSRENJeVFrMmZWYzUzUGhkT1dSRFNSWkdIYm1PeHNDZS9kK3ovdWNYVnpuZWh4dXhMOFBybUtSVmhOTUFEZkNYZ1BncTNPc3lScUNLVUVXZFBCZHZXUXJnaUlvVzhKdVRJbW1CWDJDVWNHWUlDL3c2dHh2VGJBdmVDVllFV3dJU29hd0YwUFRUVUYwUnZCRThKRmdpTy9yT2FxQ2JjRzg0Q21hTlpvT3ZCaHFOWXRHRGRHdkJROEVQV2pXcVZPekJVR240Ry9CcW1ESENDR3VaTWZRcUNFNkhORm5mUVJqcktGZmtCRWtuUWpTYXBVSnUvaXI4ZEZCTk5waE54dEJZRW5NM3ROQ1NzVFFaNjNmL20remw4M1BjU1BiMUJvZ3ptU2RXN0kzaUt4TGNQR2FzYmRFakVnbVNCTjVvbkRtcXZmbnhjUzZQUExyTzRKcHdTUTVNbldUeUNiSnE3MkNkeWtpdmhCOEtCaUFySHZkeWRwOG1xWFN1VS9GWkVnK0ZJd0xjamZCakcwUXlxQk5RL0JMd1NlQzk5Rm9sci96VlQvYnlCRzBrNnp0VTAwUXVpdjRtSUwvQ2Ryc1lvTjduRHNSaWhlQmNJMHVwMHdINUo5SDlpcDhKRGpEYkR2UTNDUm0remxtT3dxcGZmclBUVFk5Uk5EcXFyTStEaUJwcmw4WGJObGVOa3pXVlpFeDBhQy8xSkJtVFJIV1p0dEhFUG9LYlQ0ZzZpYlk0S0pnUWJERzllTkU1NEU2STdPNVpwZTI3bGZXSzdDZnQ4Z21NUnV6b1c2MDRFWWtXcVJ4M3NPVW5KRFpUZ2crZyt4OThta1ZiWnJOZlM5NExuak52VWNFTDlqVFJhWWNLTEpHcTM4eXJTaHdqOEJWdnFRRHhqZ2JyRGM0bUpzYzBTei9KdmlEbXliWjZBUm0rNUR6SkFMZGhkanZnaC9CTXNKeWljaFJDZ3hyeHZ1c2Zhajg5bmhTa1dEaGV5b3k5a2NNWUdVazJhT0k1MW56VXpCQm41cUIwS3hnRHEzT016TXFLS3NvWVNsUitsa2ZLNnM1SnhQRzR3RGxjallhbUZJYTZJMTRreXErVmNRc2g1azRmTUNhOXlEdk1DWXg1dm1ONEJjMUdEdXc4eUtscWVvVkJjbGp6YVVnTjRxZjlKSHJFZzFJMUxqQVk0UTR4YzlEYUxPRXhwY3gyZS80WEhCT1JwN0JlUnUrYkZFUkxzSzcxTXduU29CS0VPRGVVK3ZkVmRvc1FNeWE3UnkrdlJQU1p0TU9MNVIya3NCMW91ZGJtMGVIQ0Q0ZWE1VXcwU1hCVDhCOGZxUDhzK2xFbTFGQjJmU1Zob1FKTGkvUjRqem5KYjR2aGZMeHRTTnJ6ZGtuL0MvaWw4K1VObmVWTmx0R3RKbTFjUVhUblNNUXpWSWhIYlphbTYyWVZQZ1EyeVVWVlhSeWIyZnpiQWZUdzFSUGt4UUd5VXV1SGFpZ1pjbVhiWjNhanNOcm9oQk5nZkVJd1hXVHkyY3g3Mks0L2JxT1pHM0ZZOHM5KzZ3bERka2NkZkNhaXNoK3E4M1k1c2NaeXJvZTlic29SQ3VxNjlqbStpNDAyNHUyYlpGUnhMUmI1c2RKcGVFZWF0a3hOaGFseFF0VXVsa2lBaS9TRUdUVmVOU1F2WU9tajZpZXlxM1NycTZXVW14b2lObzRIV0U2VUtXSU54cjlXZkF0YVdjUG9lVXg0VHhhdGhWV0lUUStDVnFoV2UzRGR1NlQ1T1kxdEZBK0E4WWMvNkh1TlFIb0tTWGhDcHFySXJndXpobUk1eURvaHFZY1lkS3VLbWZkQzNEdVdDbDVpcytWTU1jRC9HK1RCbnY5REt3eVN2bEJUUnBXdWRhdWM2UUlwSlFmZHhQRXNwQXRLYk4yMVlBdW81QStBeDJudU42cDAwVkxkQXZ6MjZEZkhMaGdTbUN2MnlIQ3ZpRXdGVlhMOXhLeW0yajdNZjN5QUtPWkFkVWRwYmp2TnRlbWNhMSsxWEs2NXhReWxzTTJnajdTRlpzWG1pR1ZNS1Y5dEphcEl5cjdhT05BWGUrSG92TVNBdm1MalZSbzZPOUF0Qk90MktjRGE2elpTOEFjSjQ2azZxamFsc0FLd3Qrek15anZET2xVdVRCUngzZzEvSUpWY0Vid0tpdVRyckNKUjBxck01ajNDR1FQRWNZWVBYTCtncm9nNEpvMU1zRnpwaURMQ0x6bW5UT2w4eVBNa1lNTGZtZm5RUVVhOWpLdXNzV2dmQnB6blNZYldPM25NT0Z1NStLWFNPeDlCcGsxNXlCLzdGYmVKWWxFcmE3Q1pyMEhhbWpXam9NR0VZNSt0OEt0dzhLc2E5cTBOZ0xwdHJ3dEV6WnIrNmpDYXQ0T3pXMk9qL0xlb3F1aXZVMXZXVDF2YnNlRExXM1dtNlF0WC9ueEZQUHJSa3JXOE5PTnR3U1ZkTnA3K0FTc2ZjeHVCei9yd0UvVERjN0RiQXA2UWVOaFBsZThHSkF0T3ljUG9MWWhuTUtjYzFlcGtEaThadUNyNUc4TGlVazFlY3pFZlN6VHFCK1hDRjdoRXZOR2tRMXJ1aWtkME8xTFg3ZGsyK1BITjVwc29LS3piVWlDcXhLWUYwT2laWEx0QmhWVnpvbjJ0b3d0U2NzcXBjV09yTjNvQVczYWduUHkrTFBUaWZacWtCSFdLK2RrUmwyTEkxbWZYTHZPeEtSYkRSSHFKVnRsSnJZQXR2a3Vsdi9YWXg5N0R0S2k5VGpSWC9xeXJ6cThwaEw3cjBDSkkxazlhRXRISktvSkg0SGpJQmYzLzhXN3pCNkRjRVQrVjRBQkFBOCtJWEhJMG9pa0FBQUFBRWxGVGtTdVFtQ0MiLz4KPC9kZWZzPgo8L3N2Zz4K" alt="dbdiagram-logo"></a> <div data-v-00172550="" class="name-info"><div data-v-00172550="" class="input-wrapper"><input data-v-00172550="" placeholder="Untitled Diagram" class="input"> <div data-v-00172550="" class="status-text status-text-positive" data-original-title="null">
+            Synced
+            <svg data-v-00172550="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="explain-icon svg-inline--fa fa-exclamation-circle fa-w-16" style=""><path data-v-00172550="" fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" class=""></path></svg></div></div> <div data-v-497e73ea="" data-v-00172550="" id="menu-dropdown" class="btn-with-icon"><div data-v-497e73ea="" class="dropdown"><svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="angle-down-icon svg-inline--fa fa-angle-down fa-w-10"><path data-v-497e73ea="" fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" class=""></path></svg> <div data-v-497e73ea="" class="dropdown-content"><div data-v-497e73ea="" class="dropdown-content-content"><div data-v-497e73ea="" data-menu-dropdown="New Diagram" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            New Diagram
+            <!----></div> <!----> <!----></div><div data-v-497e73ea="" data-menu-dropdown="My Diagrams" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            My Diagrams
+            <!----></div> <svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="absolute mr-3 right-0 angle-right-icon svg-inline--fa fa-angle-right fa-w-8"><path data-v-497e73ea="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg> <div data-v-497e73ea="" class="right-child"><div data-v-497e73ea="" class="right-child-content-wrapper"><div data-v-497e73ea="" class="right-child-content"><div data-v-497e73ea="" data-my-diagram-dropdown="Untitled" class="right-child-item title-highlighted"><a data-v-497e73ea="" href="https://dbdiagram.io/d/629c49b254ce2635275fd3a9" aria-current="page" class="flex flex-row items-center w-full h-full pl-2 hover:no-underline router-link-exact-active router-link-active"><div data-v-497e73ea="" class="mr-2"><div data-v-497e73ea=""><!----> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYgMC41QzIuNjg2MjggMC41IDAgMy4xODYyOCAwIDYuNUMwIDkuODEzNzIgMi42ODYyOCAxMi41IDYgMTIuNUM5LjMxMzcyIDEyLjUgMTIgOS44MTM3MiAxMiA2LjVDMTIgMy4xODYyOCA5LjMxMzcyIDAuNSA2IDAuNVpNMTAuMzQ3NSA0LjM3MDk3SDguMzEyMjVDOC4xMzQ4NCAzLjQ2NTk2IDcuODQ1MSAyLjYyMTIyIDcuNDU3MyAxLjg4Mzg1QzguNzQ2MDIgMi4yODkwNCA5Ljc4MTQ4IDMuMjE3NTQgMTAuMzQ3NSA0LjM3MDk3Wk0xMC43NDIzIDcuNDY3NzRIOC40NzUwN0M4LjUyODA4IDYuODQxMDEgOC41MzE2NiA2LjE5NzA3IDguNDc0NjYgNS41MzIyNkgxMC43NDIzQzEwLjg3MDggNi4xNjgzOCAxMC44NzEgNi44MzA3IDEwLjc0MjMgNy40Njc3NFpNNC42OTIgNy40Njc3NEM0LjYzMDA0IDYuODI2NjYgNC42MjkzOSA2LjE4MjAyIDQuNjkxMDEgNS41MzIyNkg3LjMwODk5QzcuMzcwNTYgNi4xODE0MiA3LjM3MDAxIDYuODI2MDEgNy4zMDggNy40Njc3NEg0LjY5MlpNNy4xMjQ1MiA4LjYyOTAzQzYuODk4MjggOS42NDY0NCA2LjUxMjQ3IDEwLjU2MjQgNiAxMS4yNzJDNS40ODc1MSAxMC41NjI0IDUuMTAxNzIgOS42NDY0NCA0Ljg3NTQ4IDguNjI5MDNINy4xMjQ1MlpNMS4yNTc2OCA1LjUzMjI2SDMuNTI1MzRDMy40NzIwOSA2LjE1MzUyIDMuNDY4MjIgNi43OTcxIDMuNTI0OTMgNy40Njc3NEgxLjI1NzY4QzEuMTI5MjMgNi44MzE2NSAxLjEyOTA0IDYuMTY5MyAxLjI1NzY4IDUuNTMyMjZaTTQuODcyNDQgNC4zNzA5N0M1LjA5NjgzIDMuMzU1NDcgNS40ODE0NCAyLjQ0MzgzIDYgMS43MjcxN0M2LjUxODU2IDIuNDQzODMgNi45MDMxOSAzLjM1NTQ5IDcuMTI3NTYgNC4zNzA5N0g0Ljg3MjQ0Wk00LjU0MjY4IDEuODgzODVDNC4xNTQ5IDIuNjIxMjIgMy44NjUxNCAzLjQ2NTk2IDMuNjg3NzUgNC4zNzA5N0gxLjY1MjQ3QzIuMjE4MDYgMy4yMTg0OCAzLjI1Mjk5IDIuMjg5MzUgNC41NDI2OCAxLjg4Mzg1Wk0xLjY1MjQ3IDguNjI5MDNIMy42ODU3N0MzLjg2MjQgOS41MzU2MSA0LjE1MTQyIDEwLjM3ODYgNC41Mzk5OSAxMS4xMTUzQzMuMjQyMTMgMTAuNzA2NCAyLjIxMzIzIDkuNzcxNjIgMS42NTI0NyA4LjYyOTAzWk03LjQ2MDAxIDExLjExNTNDNy44NDg1OCAxMC4zNzg2IDguMTM3NiA5LjUzNTYxIDguMzE0MjMgOC42MjkwM0gxMC4zNDc1QzkuNzg1ODMgOS43NzM1NiA4Ljc1NTgxIDEwLjcwNyA3LjQ2MDAxIDExLjExNTNaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="globe"></div></div> <div data-v-497e73ea="" class="title">Untitled</div></a> <div data-v-497e73ea="" class="flex w-full h-full items-center justify-center"><svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="close-icon svg-inline--fa fa-times fa-w-11"><path data-v-497e73ea="" fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg></div></div></div></div></div></div><div data-v-497e73ea="" data-menu-dropdown="Shared Diagrams" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            Shared Diagrams
+            <!----></div> <svg data-v-497e73ea="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="absolute mr-3 right-0 angle-right-icon svg-inline--fa fa-angle-right fa-w-8"><path data-v-497e73ea="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg> <div data-v-497e73ea="" class="right-child"><div data-v-497e73ea="" class="right-child-content-wrapper"><div data-v-497e73ea="" class="right-child-content"><div data-v-497e73ea="" data-my-diagram-dropdown="(Empty)" class="right-child-item cursor-not-allowed select-none"><div data-v-497e73ea="" class="title ml-3">(Empty)</div></div></div></div></div></div><div data-v-497e73ea="" data-menu-dropdown="New Sample Diagram" class="dropdown-item"><div data-v-497e73ea="" class="title">
+            New Sample Diagram
+            <!----></div> <!----> <!----></div></div></div></div></div></div> <div data-v-00172550="" class="dropdown"><button data-v-00172550="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle"><svg data-v-00172550="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hamburger-icon svg-inline--fa fa-bars fa-w-14"><path data-v-00172550="" fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></button> <div data-v-00172550="" aria-labelledby="dropdownMenuButton" class="dropdown-menu pull-right"><li data-v-00172550="" class="dropdown-item list"><a data-v-00172550="" nonebackground="true" class="email">gift.weike@gmail.com</a></li> <li data-v-00172550="" class="list"><div data-v-274b76f6="" data-v-00172550="" class="base-menu-btn has-background"><div data-v-274b76f6=""><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="share" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="header-icon svg-inline--fa fa-share fa-w-16"><path data-v-274b76f6="" fill="currentColor" d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z" class=""></path></svg> <span data-v-274b76f6="" class="title">Share
+      <!----></span> <!----> <!----></div> <!----> <!----></div> <!----></li> <li data-v-00172550="" class="dropdown-item list"><svg data-v-00172550="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="black-icon svg-inline--fa fa-question fa-w-12"><path data-v-00172550="" fill="currentColor" d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z" class=""></path></svg> <a data-v-00172550="">Help</a></li> <li data-v-00172550="" class="list"><div data-v-274b76f6="" data-v-00172550="" class="base-menu-btn has-background"><div data-v-274b76f6=""><svg data-v-274b76f6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="header-icon svg-inline--fa fa-sign-out-alt fa-w-16"><path data-v-274b76f6="" fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z" class=""></path></svg> <span data-v-274b76f6="" class="title">Sign out
+      <!----></span> <!----> <!----></div> <!----> <!----></div> <!----></li></div></div></div></header> <div class="main h-box flex-size relative overflow-hidden"><div tabindex="0" aria-label="Loading" class="vld-overlay is-active" style="display: none;"><div class="vld-background" style="backdrop-filter: blur(2px);"></div><div class="vld-icon"><div class="text-2xl font-semibold text-blue-900 text-center">You have been disconnected. Reconnecting</div><svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" fill="#000" width="60" height="240"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite"></animate></circle></svg><hr class="w-full border-0"> <div class="btn rounded bg-red-600 text-white">Cancel</div></div></div> <div id="query-finder" class="finder"></div> <div id="editor-container" style="background-color: rgb(40, 40, 40);"><div class="editor"><div style="height: 100%; width: 100%; font-family: &quot;Droid Sans Mono&quot;;" id="ace-editor" class=" ace_editor ace-holistics ace_dark" draggable="false"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; left: 217.629px; top: 704px; height: 16px; width: 7.20125px;"></textarea><div class="ace_gutter" aria-hidden="true"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 846px; width: 48px;"><div class="ace_gutter-cell " style="height: 16px;">1</div><div class="ace_gutter-cell " style="height: 16px;">2</div><div class="ace_gutter-cell " style="height: 16px;">3</div><div class="ace_gutter-cell " style="height: 16px;">4</div><div class="ace_gutter-cell " style="height: 16px;">5</div><div class="ace_gutter-cell " style="height: 16px;">6</div><div class="ace_gutter-cell " style="height: 16px;">7</div><div class="ace_gutter-cell " style="height: 16px;">8</div><div class="ace_gutter-cell " style="height: 16px;">9</div><div class="ace_gutter-cell " style="height: 16px;">10</div><div class="ace_gutter-cell " style="height: 16px;">11</div><div class="ace_gutter-cell " style="height: 16px;">12</div><div class="ace_gutter-cell " style="height: 16px;">13</div><div class="ace_gutter-cell " style="height: 16px;">14</div><div class="ace_gutter-cell " style="height: 16px;">15</div><div class="ace_gutter-cell " style="height: 16px;">16</div><div class="ace_gutter-cell " style="height: 16px;">17</div><div class="ace_gutter-cell " style="height: 16px;">18</div><div class="ace_gutter-cell " style="height: 16px;">19</div><div class="ace_gutter-cell " style="height: 16px;">20</div><div class="ace_gutter-cell " style="height: 16px;">21</div><div class="ace_gutter-cell " style="height: 16px;">22</div><div class="ace_gutter-cell " style="height: 16px;">23</div><div class="ace_gutter-cell " style="height: 16px;">24</div><div class="ace_gutter-cell " style="height: 16px;">25</div><div class="ace_gutter-cell " style="height: 16px;">26</div><div class="ace_gutter-cell " style="height: 16px;">27</div><div class="ace_gutter-cell " style="height: 16px;">28</div><div class="ace_gutter-cell " style="height: 16px;">29</div><div class="ace_gutter-cell " style="height: 16px;">30</div><div class="ace_gutter-cell " style="height: 16px;">31</div><div class="ace_gutter-cell " style="height: 16px;">32</div><div class="ace_gutter-cell " style="height: 16px;">33</div><div class="ace_gutter-cell " style="height: 16px;">34</div><div class="ace_gutter-cell " style="height: 16px;">35</div><div class="ace_gutter-cell " style="height: 16px;">36</div><div class="ace_gutter-cell " style="height: 16px;">37</div><div class="ace_gutter-cell " style="height: 16px;">38</div><div class="ace_gutter-cell " style="height: 16px;">39</div><div class="ace_gutter-cell " style="height: 16px;">40</div><div class="ace_gutter-cell " style="height: 16px;">41</div><div class="ace_gutter-cell " style="height: 16px;">42</div><div class="ace_gutter-cell " style="height: 16px;">43</div><div class="ace_gutter-cell " style="height: 16px;">44</div><div class="ace_gutter-cell " style="height: 16px;">45</div><div class="ace_gutter-cell " style="height: 16px;">46</div><div class="ace_gutter-cell " style="height: 16px;">47</div><div class="ace_gutter-cell " style="height: 16px;">48</div></div><div class="ace_gutter-active-line" style="top: 704px; height: 16px;"></div></div><div class="ace_scroller" style="left: 48px; right: 0px; bottom: 6px;"><div class="ace_content" style="margin-top: 0px; width: 332px; height: 846px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 580.1px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:16px;top:704px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:16px"><span class="ace_keyword">Table</span> <span class="ace_identifier">users</span>  <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:16px">  id <span class="ace_support ace_function">SERIAL</span> [<span class="ace_identifier">pk</span>, <span class="ace_identifier">increment</span>] <span class="ace_comment">// auto-increment</span></div><div class="ace_line" style="height:16px">  created_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px">  updated_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px">  username  <span class="ace_support ace_function">VARCHAR</span>(30)</div><div class="ace_line" style="height:16px"><span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:16px"></div><div class="ace_line" style="height:16px"><span class="ace_keyword">Table</span> <span class="ace_identifier">posts</span> <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:16px">  id <span class="ace_support ace_function">SERIAL</span> [<span class="ace_identifier">pk</span>, <span class="ace_identifier">increment</span>] </div><div class="ace_line" style="height:16px">  created_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px">  updated_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px">  url <span class="ace_support ace_function">VARCHAR</span>(200)</div><div class="ace_line" style="height:16px">  user_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">users</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px">  caption <span class="ace_support ace_function">VARCHAR</span>(240)</div><div class="ace_line" style="height:16px">  lat <span class="ace_support ace_function">REAL</span></div><div class="ace_line" style="height:16px">  lng <span class="ace_support ace_function">REAL</span></div><div class="ace_line" style="height:16px"> <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:16px"> </div><div class="ace_line" style="height:16px"> Table <span class="ace_support ace_function">comments</span> <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:16px">  id <span class="ace_support ace_function">SERIAL</span> [<span class="ace_identifier">pk</span>, <span class="ace_identifier">increment</span>] </div><div class="ace_line" style="height:16px">  created_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px">  updated_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px">  contents <span class="ace_support ace_function">VARCHAR</span>(240)</div><div class="ace_line" style="height:16px">  user_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">users</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px">  post_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">posts</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"> <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:16px"> Table <span class="ace_support ace_function">likes</span> <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> id <span class="ace_support ace_function">SERIAL</span> [<span class="ace_identifier">pk</span>, <span class="ace_identifier">increment</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> created_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> user_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">users</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> post_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">posts</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> comment_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">comments</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"> <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:16px"> Table <span class="ace_support ace_function">photo_tags</span><span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> id <span class="ace_support ace_function">SERIAL</span> [<span class="ace_identifier">pk</span>, <span class="ace_identifier">increment</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> created_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> updated_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> post_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">posts</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> user_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">users</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> X <span class="ace_support ace_function">INTEGER</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> Y <span class="ace_support ace_function">INTEGER</span></div><div class="ace_line" style="height:16px"> <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:16px"> Table <span class="ace_support ace_function">caption_tags</span><span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> id <span class="ace_support ace_function">SERIAL</span> [<span class="ace_identifier">pk</span>, <span class="ace_identifier">increment</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> created_at <span class="ace_support ace_function">TIMESTAMP</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> post_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">posts</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">  </span> user_id <span class="ace_support ace_function">INTEGER</span> [<span class="ace_keyword">ref</span>: <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">users</span>.<span class="ace_identifier">id</span>]</div><div class="ace_line" style="height:16px"> <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 169.629px; top: 704px; width: 7.20125px; height: 16px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 11px; bottom: 6px; display: none;"><div class="ace_scrollbar-inner" style="width: 11px; height: 783px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 11px; left: 48px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 11px; width: 584px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div> <!----></div> <div id="editor-resizer"></div> <div class="close-btn-wrapper"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="close-icon svg-inline--fa fa-angle-left fa-w-8"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" class=""></path></svg></div></div> <div class="diagram-container flex-1"><div class="diagram" style="background-color: rgb(68, 68, 76); cursor: grab;"><div class="konvajs-content" role="presentation" style="position: relative; user-select: none; width: 1596px; height: 820px;"><canvas width="1596" height="820" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 1596px; height: 820px; display: block;"></canvas><canvas width="1596" height="820" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 1596px; height: 820px; display: block;"></canvas><canvas width="1596" height="820" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 1596px; height: 820px; display: block;"></canvas><canvas width="1596" height="820" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 1596px; height: 820px; display: block;"></canvas><canvas width="1596" height="820" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 1596px; height: 820px; display: block;"></canvas></div></div> <div data-v-3d4c80e4="" class="controller-container" style="--display-controller:flex;"><div data-v-3d4c80e4="" class="controller dark"><label data-v-3d4c80e4="" class="scale-value">75%</label> <div data-v-3d4c80e4="" class="vue-slider vue-slider-ltr" default="default" style="padding: 7px 0px; width: 50px; height: 8px;"><div class="vue-slider-rail"><div class="vue-slider-process" style="height: 100%; top: 0px; left: 0%; width: 44.4444%; transition-property: width, left; transition-duration: 0.5s;"></div><div aria-valuetext="0.75" class="vue-slider-dot" role="slider" aria-valuenow="0.75" aria-valuemin="0.15" aria-valuemax="1.5" aria-orientation="horizontal" tabindex="0" style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 44.4444%; transition: left 0.5s ease 0s;"><div class="vue-slider-dot-handle" style="background: rgb(52, 152, 219); box-shadow: none; border: 1px solid white;"></div></div></div></div> <button data-v-3d4c80e4="">
+      Focus
+    </button> <button data-v-3d4c80e4="">
+      Auto-arrange
+    </button> <button data-v-3d4c80e4="">Highlight</button> <label data-v-25adc6c0="" data-v-3d4c80e4="" class="vue-js-switch"><input data-v-25adc6c0="" type="checkbox" class="v-switch-input"> <div data-v-25adc6c0="" class="v-switch-core" style="width: 28px; height: 16px; background-color: rgb(204, 204, 204); border-radius: 8px;"><div data-v-25adc6c0="" class="v-switch-button" style="width: 10px; height: 10px; transition: transform 300ms ease 0s; transform: translate3d(3px, 3px, 0px);"></div></div> <!----></label> <!----> <!----></div></div> <!----></div></div> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <div class="vue-notification-group" style="width: 300px; top: 0px; right: 0px;"><span></span></div> <div class="vue-notification-group" style="width: 300px; top: 0px; left: calc(50% - 150px);"><span></span></div> <div data-v-7e9c2120="" class="watermark flex flex-col align-center fixed no-underline"><a data-v-7e9c2120="" href="https://holistics.io/?utm_source=dbdiagramio&amp;utm_medium=web_right_bottom&amp;utm_content=_unit_name_" target="_blank" class="powered-by">
+    From Holistics folks with love
+  </a> <a data-v-7e9c2120="" href="https://careers.holistics.io/job-openings/open-source-full-stack-engineer" target="_blank" class="hiring text-center">
+    Work with Us 🔥
+  </a></div> <div data-v-40719d13="" class="collab-ctn" style="--ctn-height:34px;"><div data-v-40719d13="" class="relative h-full w-full"><div data-v-40719d13="" class="absolute top-0 rounded-full has-tooltip" data-original-title="null" style="right: 0px;"><img data-v-40719d13="" src="./Untitled - dbdiagram.io_files/7e370da9a3471e33596f52727992439f(1)" alt="Avatar" class="rounded-full pointer-events-none" style="border: 4px solid rgb(239, 83, 80);"></div> <div data-v-40719d13="" class="remaining-users text-white" style="display: none;">
+      +0
+    </div></div></div></div><script type="text/javascript" src="./Untitled - dbdiagram.io_files/manifest.2ae2e69a05c33dfc65f8.js"></script><script type="text/javascript" src="./Untitled - dbdiagram.io_files/vendor.b25cbe4fa9e1fcaf056c.js"></script><script type="text/javascript" src="./Untitled - dbdiagram.io_files/app.5a59f1e79481f1b0659a.js"></script><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Untitled - dbdiagram.io_files/widget_iframe.d7fc2fc075c61f6fa34d79a0cbbf1e34.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="apiproxy8680cf3e6b9ae4fa966abc02d18aaf962207ff7a0.1107329887" name="apiproxy8680cf3e6b9ae4fa966abc02d18aaf962207ff7a0.1107329887" src="./Untitled - dbdiagram.io_files/proxy.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px; display: none;"></iframe><iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" aria-hidden="true" frame-border="0" style="position: absolute; width: 1px; height: 1px; inset: -9999px; display: none;" src="./Untitled - dbdiagram.io_files/iframe.html"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Untitled - dbdiagram.io_files/saved_resource.html"></iframe><div class=" ace_editor ace_autocomplete ace_dark ace-holistics" style="top: 738px; height: 18.6875px; left: 97.4087px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0;"></textarea><div class="ace_gutter" aria-hidden="true" style="display: none;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px;"></div><div class="ace_gutter-active-line" style="display: none;"></div></div><div class="ace_scroller" style="left: 0px; right: 0px; bottom: 0px;"><div class="ace_content" style="cursor: default; margin-top: 0px; width: 278px; height: 56.0625px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 532.1px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:18.6875px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line ace_selected" style="height:18.6875px"><span class="ace_completion-highlight">captio</span><span class="ace_">n</span><span class="ace_rightAlignedText">local</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors" style="opacity: 0;"><div class="ace_cursor" style="left: 4px; top: 0px; width: 6.60125px; height: 18.6875px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 11px; bottom: 0px; display: none;"><div class="ace_scrollbar-inner" style="width: 11px; height: 18.6875px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 11px; left: 0px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 11px; width: 272px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></body></html>

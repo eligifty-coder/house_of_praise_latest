@@ -1,0 +1,117 @@
+@media screen and (max-width: 601px) {
+   .nav{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: #FFEBEB;
+      z-index: 10;
+      padding-top: 16vw;
+      padding-bottom: 8.53vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+   }
+   .top{
+      width: 91.46vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+   }
+   .top button{
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: transparent;
+      display: flex;
+      align-items: flex-start;
+      transition: all .3s ease-in-out;
+   }
+   .top button img{
+      width: 5.65vw;
+      padding: 0;
+      -o-object-fit: cover;
+         object-fit: cover;
+   }
+   .top button img:hover{
+      opacity: .8;
+   }
+   .top ul{
+      width: 100%;
+      display: grid;
+      row-gap: 6.4vw;
+      align-items: center;
+   }
+   .top ul li a{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 6.4vw;
+      line-height: 8.8vw;
+      letter-spacing: -0.025em;
+      color: #000000;
+      display: block;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+   }
+   .top ul li a:hover{
+      transform:  translateY(0.5);
+      opacity: 0.8;
+   }
+   .bottom{
+      width: 91.46vw;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 10.66vw;
+      align-items: center;
+      justify-content: center;
+   }
+   .bottom .anchor {
+      display: block;
+      text-decoration: none;
+      width: 88.8vw;
+      margin: 0 auto;
+      background: #FC3C3C;
+      box-shadow: 0px 1.6vw 8.53vw rgba(0, 0, 0, 0.25);
+      border-radius: 2.13vw;
+      padding: 4.26vw 0;
+      text-align: center;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.73vw;
+      line-height: 5.06vw;
+      text-align: center;
+      letter-spacing: -0.025em;
+      color: #F4F4F4;
+      transition: all .3s ease-in-out;
+   }
+   .bottom .anchor:hover{
+      opacity: .8;
+   }
+   .bottom .icons{
+      display: flex;
+      justify-content: center;
+      gap: 6.4vw;
+      width: 44.8vw;
+      margin: 0 auto;
+   }
+   .bottom .icons a{
+      width: 100%;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+   }
+   .bottom .icons a img{
+      width: 6.4vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+   }
+   .bottom.icons a:hover{
+      opacity: .8;
+   }
+   /* width: 91.46vw; */
+   /* margin: 0 auto; */
+   /* transition: all .3s ease-in-out; */
+}

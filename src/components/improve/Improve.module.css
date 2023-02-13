@@ -1,0 +1,246 @@
+@media screen and (max-width: 601px) {
+   .improve{
+      position: relative;
+      width: 100%;
+      padding-top: 14.9vw;
+      padding-bottom: 21.33vw;
+      display: grid;
+      align-items: center;
+      row-gap: 6.4vw;
+   }
+   .improve .positioned{
+      position: absolute;
+      right: 0;
+      top: -16vw;
+      width: 20.1vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+         z-index: -10;
+   }
+   .improve header{
+      padding-bottom: 4.26vw;
+      display: grid;
+      align-items: center;
+      row-gap: 2.133vw;
+      width: 90%;
+      margin: 0 auto;
+   }
+   .improve header h1{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5.33vw;
+      line-height: 140%;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      width: 100%;
+   }
+   .improve header p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.267vw;
+      line-height: 5.866vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+   .improve .portrait {
+      width: 90%;
+      margin: 0 auto;
+      -o-object-fit: cover;
+         object-fit: cover;
+      padding: 0; 
+      background: linear-gradient(116.02deg, rgba(90, 86, 86, 0.4) 0%, rgba(252, 60, 60, 0.2) 100.51%);
+      mix-blend-mode: multiply;
+      height: 85.33vw;
+      border-radius: 2.133vw;
+   }
+   .improve  .portrait img{
+      width: 100%;
+      border-radius: 2.133vw;
+      height: 100%;
+      transition: all .3s ease-in-out;
+   }
+   .improve  .portrait img:hover{
+      opacity: .8;
+   }
+   .improve ul{
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      row-gap: 6.4vw;
+   }
+   .improve ul li{
+      width: 100%;
+      padding: 8.53vw 6.4vw;
+      background: #FFEBEB;
+      box-shadow: 0.26vw 1.06vw 8.53vw rgba(0, 0, 0, 0.05);
+      border-radius: 2.133vw;
+      display: grid;
+      row-gap: 4.26vw;
+      align-items: center;
+   }
+   .improve ul li h1{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4.8vw;
+      line-height: 6.1333vw;
+      letter-spacing: -0.025em
+   }
+   .improve ul li p{
+      padding-bottom: 4.26vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 4.26vw;
+      line-height: 5.86vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+   .improve ul li a{
+      width: 34.93vw;
+      height: 13.6vw;
+      background: #FC3C3C;
+      box-shadow: 0 1.6vw 8.53vw rgba(0, 0, 0, 0.25);
+      border-radius: 2.13vw;
+      display: grid;
+      place-items: center;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.73vw;
+      line-height: 5.06vw;
+      letter-spacing: -0.025em;
+      color: #F4F4F4;
+      transition: all .3s ease-in-out;
+   }
+   .improve ul li a:hover{
+      opacity: .8;
+   }
+   .big{
+      display: none;
+   }
+}
+@media screen and (min-width: 602px) {
+   .small{
+      display: none;
+   }
+   .improve{
+      position: relative;
+      padding: 7.22vw 0;
+      display: grid;
+      align-items: center;
+      row-gap: 2.22vw;
+   }
+   .positioned{
+      width: 13.125vw;
+      position: absolute;
+      -o-object-fit: cover;
+         object-fit: cover;
+      right: 0;
+      top: -12vw;
+      z-index: -10;
+   }
+   .improve header{
+      width: 90vw;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      row-gap: 0.555vw;
+   }
+   .improve header h1{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.22vw;
+      line-height: 2.77vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F
+   }
+   .improve header p{
+      width: 44.0278vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.53vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+   .improve .portrait{
+      width: 90%;
+      margin: 0 auto;
+      background: linear-gradient(116.02deg, rgba(90, 86, 86, 0.4) 0%, rgba(252, 60, 60, 0.2) 100.51%);
+      mix-blend-mode: multiply;
+      height: 100%;
+      border-radius: 0.55vw;
+      background-color: red;
+   }
+   .improve .portrait img.big {
+      width: 100%;
+      transition: all .3s ease-in-out;
+      border-radius: 0.55vw;
+      height: 100%;
+   }
+   .improve .big:hover{
+      opacity: .8;
+   }
+   .improve ul{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 2.2vw;
+   }
+   .improve ul li{
+      width: 43.88vw;
+      background: #FFEBEB;
+      box-shadow: 0.069vw 0.27vw 2.22 rgba(0, 0, 0, 0.05);
+      border-radius: 0.55vw;
+      padding:  2.22vw;
+      padding-top: 2.77vw;
+      display: grid;
+      align-items: center;
+      row-gap: 1.388vw;
+   }
+   .improve ul li h1{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.22vw;
+      line-height: 2.77vw;
+      letter-spacing: -0.025em;
+   }
+   .improve ul li p{
+      padding-bottom: 4.3vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.38vw;
+      line-height: 1.875vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+      width: 35vw;
+   }
+   .improve ul li a{
+      width: 13.6vw;
+      height: 3.88vw;
+      background: #FC3C3C;
+      border-radius: 0.55vw;
+      transition:  all .3s ease-out;
+      display: grid;
+      place-items: center;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.527vw;
+      letter-spacing: -0.025em;
+      color: #F4F4F4;
+   }
+   .improve ul li a:hover {
+      opacity: .8;
+   }
+}

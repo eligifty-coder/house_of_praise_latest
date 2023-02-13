@@ -1,0 +1,270 @@
+@media screen and (max-width: 601px) {
+   .program {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      row-gap: 10.66vw;
+   }
+
+   .overlay {
+      position: absolute;
+      width: 36.87vw;
+      right: -5vw;
+      top: 10.4vw;
+      z-index: -10;
+   }
+
+   .overlay img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      padding: 0;
+   }
+
+   .title {
+      display: grid;
+      align-items: center;
+   }
+
+   .title h1 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6.4vw;
+      line-height: 140%;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      position: relative;
+      margin-bottom: 8.5vw;
+   }
+
+   .title h1::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11.2vw;
+      width: 14.9vw;
+      height: 0.53vw;
+      background: #FC3C3C;
+   }
+
+   .title h3 {
+      color: #5A5656;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5.33vw;
+      line-height: 7.2vw;
+      letter-spacing: -0.025em;
+      padding-bottom: 1.133vw;
+   }
+
+   .title p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.26vw;
+      line-height: 5.866vw;
+      letter-spacing: -0.025em;
+      color: #5A5656
+   }
+
+   .content {
+      display: grid;
+      align-items: center;
+      width: 100%;
+      row-gap: 6.4vw;
+   }
+
+   .content article {
+      width: 100%;
+      /* height: 66vw; */
+      background: #FFEBEB;
+      box-shadow: 0.26vw 1.066vw 8.53vw rgba(0, 0, 0, 0.05);
+      border-radius: 4.26vw;
+      padding-top: 8.53vw;
+      padding-bottom: 10.66vw;
+      padding-right: 6.4vw;
+      padding-left: 6.4vw;
+      display: grid;
+      align-items: center;
+      row-gap: 3.66vw;
+   }
+
+   .content article h3 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5.33vw;
+      line-height: 6.6vw;
+      letter-spacing: -0.025em;
+      color: #FC3C3C;
+   }
+
+   .content .item {
+      row-gap: 2.13vw;
+      display: grid;
+      align-items: center;
+   }
+
+   .content .item h1 {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 4.26vw;
+      line-height: 5.86vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+   }
+
+   .content .item p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.266vw;
+      line-height: 5.86vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+}
+
+@media screen and (min-width: 602px) {
+   .program {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      display: grid;
+      align-items: center;
+      row-gap: 2.77vw;
+      padding-bottom: 7.22vw;
+   }
+
+   .overlay {
+      position: absolute;
+      width: 14.65vw;
+      z-index: -10;
+      right: -5%;
+   }
+   .overlay img{
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      -o-object-fit: cover;
+         object-fit: cover;
+   }
+
+   .title {
+      display: grid;
+      align-items: center;
+   }
+
+   .title h1 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.77vw;
+      line-height: 3.47vw;
+      letter-spacing: -0.025em;
+      color: #000000;
+      position: relative;
+      margin-bottom: 1.667vw;
+
+   }
+
+   .title h1::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4.58vw;
+      width: 7.22vw;
+      height: 0.27vw;
+      background: #FC3C3C;
+   }
+
+   .title h3 {
+      margin-top: 1.667vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.666vw;
+      line-height: 2.29vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+      padding-bottom: 0.55vw;
+   }
+
+   .title p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.52vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+
+   .content {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(3, 28.8vw);
+      -moz-column-gap: 1.66vw;
+      column-gap: 1.66vw;
+      row-gap: 1.66vw;
+   }
+
+   .content article {
+      width: 100%;
+      background: #FFEBEB;
+      box-shadow: 0.069vw 0.27vw 2.22vw rgba(0, 0, 0, 0.05);
+      border-radius: 1.11vw;
+      padding-top: 2.777vw;
+      padding-bottom: 3.33vw;
+      padding-right: 1.66vw;
+      padding-left: 1.66vw;
+      display: grid;
+      align-items: center;
+      row-gap: 2.22vw;
+   }
+
+   .content article h3 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.22vw;
+      line-height: 2.77vw;
+      letter-spacing: -0.025em;
+      color: #FC3C3C;
+   }
+
+   .content article .item {
+      width: 100%;
+      display: grid;
+      align-items: center;
+   }
+
+   .content article .item h1 {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.38vw;
+      line-height: 1.875vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      padding-bottom: 0.55vw;
+   }
+
+   .content article .item p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.38vw;
+      line-height: 1.875vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+
+}

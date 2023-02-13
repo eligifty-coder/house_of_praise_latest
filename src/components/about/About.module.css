@@ -1,0 +1,128 @@
+@media screen and (max-width: 601px) {
+   .about{
+      margin-top: 2.828vw;
+      position: relative;
+      width: 100%;
+   }
+   .about img{
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   .aboutSection{
+      position: relative;
+      top: 16vw;
+      
+      background: #FC3C3C;
+      padding-top: 12.8vw;
+   }
+   .aboutSection .title{
+      width: 91.46vw;
+      margin: 0 auto;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6.4vw;
+      line-height: 140%;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      margin-bottom: 12.8vw;
+   }
+   .aboutSection .title span {
+      padding-bottom: 2.13vw;
+      border-bottom: solid 0.53vw #fff;
+   }
+
+   .paragraphs{
+      width: 91.46vw;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 8.53vw;
+      align-items: center;
+      padding-bottom: 38.2vw;
+   }
+   
+   .para1{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.27vw;
+      line-height: 5.86vw;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      width: 100%;
+   }
+   .para2{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4.81vw;
+      line-height: 150%;
+      letter-spacing: -0.025em;
+      color: #FFFFFF
+   }
+   .para3{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.26vw;
+      line-height: 5.87vw;
+      letter-spacing: -0.025em;;
+      color: #FFFFFF
+   }
+}
+@media screen and (min-width: 602px) {
+   .about{
+      background: #FC3C3C;
+   }
+   .overlay{
+      display: none;
+   }
+   .aboutSection{
+      display: grid;
+      grid-template-columns:  1fr auto;
+      align-items: flex-start;
+      width: 90%;
+      margin: 0 auto;
+      padding: 7.22vw 0;
+   }
+   .paragraphs{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 3.33vw;
+      align-items: center;
+   }
+   .para1, .para3{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.389vw;
+      line-height: 1.875vw;
+      letter-spacing: -0.025em;
+      color: #F4F4F4;
+      width: 48.125vw;
+   }
+   .para2{
+      width: 48.125vw;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.666vw;
+      line-height: 150%;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+   }
+   .aboutSection .title{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.777vw;
+      line-height: 3.47vw;
+      letter-spacing: -0.025em;
+      color: #FFFFFF
+   }
+   .aboutSection .title span {
+      padding-bottom: 1.11vw;
+      border-bottom: solid 0.277vw #fff;
+   }
+}

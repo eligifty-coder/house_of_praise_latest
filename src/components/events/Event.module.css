@@ -1,0 +1,497 @@
+/* 10.8 */
+@media screen and (max-width: 601px) {
+   .largeContent {
+      display: none;
+   }
+
+   .event {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      row-gap: 8.53vw;
+      background: #FFEBEB;
+      padding-top: 17.066vw;
+      margin-top: 19.2vw;
+      padding-bottom: 14.933vw;
+   }
+   .imageOverlay{
+      width: 38vw;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   .title {
+      width: 91.46vw;
+      margin: 0 auto;
+   }
+
+   .title h1 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6.4vw;
+      line-height: 140%;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      position: relative;
+   }
+
+   .title h1::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11.2vw;
+      width: 14.9vw;
+      height: 0.53vw;
+      background: #FC3C3C;
+   }
+
+   .content {
+      width: 91.46vw;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      row-gap: 10.66vw;
+   }
+
+   .actions {
+      display: flex;
+      align-items: center;
+      gap: 4.26vw;
+   }
+
+   .actions button {
+      width: 100%;
+      outline: none;
+      border: none;
+      background: transparent;
+      border: 0.26vw solid #FC3C3C;
+      border-radius: 8.53vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.73vw;
+      line-height: 5.06vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .actions button:hover {
+      background-color: #FC3C3C;
+   }
+
+   .body {
+      display: grid;
+      align-items: center;
+      row-gap: 4.26vw;
+   }
+
+   .navigate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+   }
+
+   .navigate .move {
+      display: flex;
+      align-items: center;
+      gap: 2.13vw;
+   }
+
+   .navigate .move span {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.2vw;
+      line-height: 4.26vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+
+   .navigate .move .btn {
+      padding: 2.87vw;
+      height: 10.6vw;
+      width: 10.6vw;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 0.4vw solid #5A5656;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      outline: none;
+   }
+
+   .navigate .move .btn:hover {
+      background: #FC3C3C;
+      border: none;
+   }
+
+   .navigate .move .btn img {
+      width: 1.96vw;
+      object-fit: cover;
+      padding: 0;
+
+   }
+
+   .body ul {
+      width: 100%;
+      align-items: center;
+      display: grid;
+   }
+
+   .body .smallContent {
+      position: relative;
+      background: #F4F4F4;
+      border: 0.26vw solid #FC3C3C;
+      padding: 6.4vw;
+      border-radius: 4.26vw;
+      display: grid;
+      align-items: center;
+      row-gap: 13.9vw;
+   }
+
+   .body .smallContent .tag {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #FC3C3C;
+      border-radius: 0px 4.26vw;
+      padding: 4vw 4.26vw;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5.33vw;
+      line-height: 6.66vw;
+      /* text-align: center; */
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      display: grid;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
+   .body .smallContent .header {
+      display: grid;
+      align-items: center;
+      row-gap: 2.13vw;
+   }
+
+   .body .smallContent .header h1 {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 4.8vw;
+      line-height: 6.66vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      text-transform: uppercase;
+   }
+
+   .body .smallContent .header h3 {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.26vw;
+      line-height: 5.86vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+
+   .body .data {
+      display: grid;
+      align-items: center;
+      width: 100%;
+      row-gap: 4.26vw;
+   }
+
+   .body .data h1 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5.33vw;
+      line-height: 6.67vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+   }
+
+   .body .data a {
+      background: #FED8D8;
+      border-radius: 2.13vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.73vw;
+      line-height: 5.06vw;
+      text-align: center;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      padding: 4.26vw 8.53vw;
+      justify-self: flex-start;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+   }
+
+   .body .data a:hover {
+      opacity: .8;
+   }
+   .gallery{
+      width: 91.4vw;
+      height: 80vw;
+      background: #FFEBEB;
+      position: relative;
+   }
+   .gallery .imgAction{
+      display: flex;
+      width: 85vw;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      left: 3.2vw;
+      top:34.6vw
+   }
+   .gallery img{
+      width:10.6vw;
+      object-fit: cover
+   }
+   .gallery .mainImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 0.26vw solid #FC3C3C;
+      border-radius: 3.2vw;
+      -webkit-transform: opacity .3s ease-in-out;
+              transform: opacity .3s ease-in-out;
+   }
+   .gallery .mainImage:hover{
+      opacity: .95;
+   }
+}
+
+@media screen and (min-width: 602px) {
+   .navigate,
+   .smallContent {
+      display: none;
+   }
+
+   .event {
+      background: #FFEBEB;
+      display: grid;
+      align-items: center;
+      row-gap: 3.77vw;
+      padding: 7.22vw 0;
+      position: relative;
+      padding-bottom: 7.22vw;
+      -ms-scroll-snap-type: y mandatory;
+          scroll-snap-type: y mandatory;
+   }
+   .imageOverlay {
+      width: 13.95vw;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   .title {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.77vw;
+      line-height: 3.47vw;
+      letter-spacing: -0.025em;
+      color: #000000;
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .title::after {
+      content: '';
+      position: absolute;
+      top: 4.58vw;
+      left: 0;
+      background: #FC3C3C;
+      height: 0.27vw;
+      width: 7.22vw;
+   }
+
+   .content {
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      row-gap: 4.16vw;
+   }
+
+   .actions {
+      display: flex;
+      align-items: center;
+      gap: 1.11vw;
+   }
+
+   .actions button {
+      border: 0.069vw solid #FC3C3C;
+      border-radius: 2.22vw;
+      /* background-color: transparent; */
+      transition: background .1s ease-in-out;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.52vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      padding: 1.180vw 4.16vw;
+   }
+
+   .actions button:hover {
+      background-color: #FC3C3C;
+   }
+
+   .body ul {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      -webkit-column-gap: 1.666vw;
+              column-gap: 1.666vw;
+      row-gap: 2.22vw;
+   }
+
+   .largeContent {
+      background: #F4F4F4;
+      border: 0.069vw solid #FC3C3C;
+      border-radius: 1.11vw;
+      display: grid;
+      align-items: center;
+      row-gap: 7.22vw;
+      position: relative;
+      padding: 1.66vw;
+   }
+
+   .largeContent .tag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #FC3C3C;
+      border-radius: 0px 1.11vw;
+      padding: 1.52vw 1.66vw;
+      color: #FFFFFF;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.66vw;
+      line-height: 2.08vw;
+      letter-spacing: -0.025em;
+   }
+
+   .header {
+      display: grid;
+      align-items: center;
+      row-gap: 0.55vw;
+   }
+
+   .header h1 {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.388vw;
+      line-height: 1.87vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      text-transform: uppercase;
+   }
+
+   .header h3 {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.388vw;
+      line-height: 1.87vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+
+   .data {
+      display: grid;
+      align-items: center;
+      row-gap: 1.66vw;
+   }
+
+   .data h1 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.66vw;
+      line-height: 2.083vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+   }
+
+   .body .data a {
+      background: #FED8D8;
+      border-radius: 0.55vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.53vwvw;
+      text-align: center;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+      padding: 1.18vw 4.16vw;
+      justify-self: flex-start;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+   }
+   
+
+   .body .data a:hover {
+      opacity: .8;
+   }
+   .gallery {
+      width: 90vw;
+      height: 46.9vw;
+      background: #FFEBEB;
+      position: relative;
+   }
+   .gallery .imgAction {
+      display: flex;
+      width: 86.67vw;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      left: 1.66vw;
+      top: 22.08vw
+   }
+
+   .gallery img {
+      width: 2.77vw;
+      object-fit: cover;
+      z-index: 10;
+   }
+
+   .gallery .mainImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 0.069vw solid #FC3C3C;
+      border-radius: 1.11vw;
+      -webkit-transform: opacity .3s ease-in-out;
+              transform: opacity .3s ease-in-out;
+   }
+
+   .gallery .mainImage:hover {
+      opacity: .85;
+   }
+
+}
