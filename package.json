@@ -1,7 +1,7 @@
 {
   "name": "hop",
   "version": "0.1.0",
-  "homepage": "https://eligifty-coder.github.io/hop",
+  "homepage": "http://eligifty-coder.github.io/house_of_praise_latest",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
