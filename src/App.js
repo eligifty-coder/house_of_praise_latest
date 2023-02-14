@@ -36,8 +36,7 @@ function App() {
         
         <Live />
         <Leadership />
-        <Footer />
-        outcome result
+        {/* <Footer /> */}
       </div>
     </HopProvider>
   );
