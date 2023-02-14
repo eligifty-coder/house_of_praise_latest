@@ -3,3 +3,4 @@ rm -rf node_modules/.cache/gh-pages
 - github pages did not show up when I ran the initial "npm run deploy"
 - I ran this command {git commit --allow-empty -m "Trigger rebuild"} and {git push} I saw on stackoverflow and boom, The gh-pages showed up on github pages
 - https://www.youtube.com/watch?v=Q9n2mLqXFpU :: video resource for deploying react app to github pages
+- git config --global --edit ::: opens a file where you can add several github users
