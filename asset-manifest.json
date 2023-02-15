@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/house_of_praise_latest/static/css/main.8956d492.css",
-    "main.js": "/house_of_praise_latest/static/js/main.3e9e7f96.js",
+    "main.js": "/house_of_praise_latest/static/js/main.461fa422.js",
     "static/media/women.JPG": "/house_of_praise_latest/static/media/women.4d18a2a232a47fa06734.JPG",
     "static/media/image5.JPG": "/house_of_praise_latest/static/media/image5.831acd3d77e3a31331e2.JPG",
     "static/media/image7.JPG": "/house_of_praise_latest/static/media/image7.1fe7a3d0492c152a2587.JPG",
@@ -38,10 +38,10 @@
     "static/media/arrow-left.svg": "/house_of_praise_latest/static/media/arrow-left.445c51d12ed0918b28dbf88fafaecd6a.svg",
     "static/media/arrow-right.svg": "/house_of_praise_latest/static/media/arrow-right.14c69bb06a9c053c343028587442af50.svg",
     "main.8956d492.css.map": "/house_of_praise_latest/static/css/main.8956d492.css.map",
-    "main.3e9e7f96.js.map": "/house_of_praise_latest/static/js/main.3e9e7f96.js.map"
+    "main.461fa422.js.map": "/house_of_praise_latest/static/js/main.461fa422.js.map"
   },
   "entrypoints": [
     "static/css/main.8956d492.css",
-    "static/js/main.3e9e7f96.js"
+    "static/js/main.461fa422.js"
   ]
 }
